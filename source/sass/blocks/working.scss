@@ -1,4 +1,8 @@
 .working {
+  @media (max-width: 870px) {
+    align-self: center;
+  }
+
   @media (max-width: 610px) {
     display: none;
   }
@@ -11,6 +15,11 @@
   color: #333333;
   margin-top: 0;
   margin-bottom: 3px;
+
+  @media (max-width: 650px) {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 
 .working__text {
@@ -19,4 +28,9 @@
   font-size: 16px;
   line-height: 19px;
   color: #828282;
+
+  @media (max-width: 650px) {
+    font-size: 11px;
+    line-height: 14px;
+  }
 }

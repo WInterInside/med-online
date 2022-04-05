@@ -63,30 +63,103 @@
       </div>
 
       <div class="header__bottom">
+        <div class="container">
+          <section class="navigation">
+            <ul id="nav" class="navigation__list">
 
+              <li class="navigation__item navigation__item--services">
+                <span>Услуги</span>
+                <ul class="navigation__services">
+                  <li class="navigation__service">1</li>
+                  <li class="navigation__service">2</li>
+                  <li class="navigation__service">3</li>
+                  <li class="navigation__service">4</li>
+                </ul>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Расшифровка анализов</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Терапия</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Педиатрия</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Психология</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Неврология</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Covid-19</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Врачи</a>
+              </li>
+
+              <li class="navigation__item navigation__item--search">
+                <form class="search">
+                  <input type="text" name="search" class="search__input" placeholder="Поиск">
+                  <input type="submit" name="submit" class="search__submit" value="">
+                </form>
+              </li>
+
+            </ul>
+            <div class="navigation__menu"></div>
+          </section>
+        </div>
       </div>
-
-
-        <section class="navigation">
-          <p class="navigation__name hidden">navigation</p>
-          <ul id="nav" class="navigation__list navigation__list--index">
-          </ul>
-          <div class="navigation__menu"></div>
-        </section>
-
 
     </header>
 
     <main class="main">
-      <h1 class="main__heading hidden"></h1>
+      <h1 class="main__heading hidden">Все врачи онлайн</h1>
+
+      <section class="hero">
+            <div class="slider-hero">
+              <div class="slider-hero__item">
+                <div class="container">
+                  <div class="slider-hero__content">
+                    <p class="slider-hero__caption">Не надо терпеть боль!</p>
+                    <p class="slider-hero__subcaption">онлайн-консультация врача от <span>190₽</span></p>
+                    <p class="slider-hero__text">Прием ведут врачи из государственных и частных поликлиник</p>
+                    <p class="slider-hero__offer">Запишись сейчас и через 20 минут получи рекомендации квалифицированного врача</p>
+                    <div class="slider-hero__btns">
+                      <a href="#" class="slider-hero__btn slider-hero__btn--call btn">Позвонить в регистратуру</a>
+                      <a href="#" class="slider-hero__btn slider-hero__btn--reg btn">Записаться</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-hero__item">
+                <div class="slider-hero__content container">
+                  2
+                </div>
+              </div>
+              <div class="slider-hero__item">
+                <div class="slider-hero__content container">
+                  3
+                </div>
+              </div>
+            </div>
+      </section>
     </main>
 
     <footer class="footer">
-
+      winter inside 2022
     </footer>
   </div>
 
-  <script src="js/jquery.js"></script>
+  <script src="libs/jquery.js"></script>
   <script src="js/script.js"></script>
+  <script src="libs/slick.min.js"></script>
 </body>
 </html>

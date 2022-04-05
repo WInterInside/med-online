@@ -6,6 +6,10 @@
     width: 180px;
   }
 
+  @media (max-width: 870px) {
+    align-self: center;
+  }
+
   @media (max-width: 610px) {
     width: 328px;
   }

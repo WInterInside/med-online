@@ -3,9 +3,9 @@
   gap: 30px;
 
   @media (max-width: 870px) {
-    gap: 10px;
+    gap: 15px;
     flex-direction: column-reverse;
-    // align-items: center;
+    align-items: center;
   }
 }
 
@@ -23,6 +23,10 @@
 
 .contacts__text {
   color: #828282;
+
+  @media (max-width: 870px) {
+    display: none;
+  }
 }
 
 .contacts__group {
@@ -44,8 +48,7 @@
     }
 
     &:hover {
-      color: #000000;
-      transform: scale(1.01);
+      opacity: 0.8;
     }
   }
 
