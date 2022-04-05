@@ -1,0 +1,36 @@
+.btn {
+  display: flex;
+  min-height: 40px;
+  padding: 17px 35px 18px;
+  border: 2px solid $green;
+  border-radius: 53px;
+  background-color: transparent;
+
+  justify-content: center;
+  align-items: center;
+
+  color: $green;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+
+  cursor: pointer;
+  transition: all .4s;
+
+  @media (max-width: 1100px) {
+    padding: 17px 15px 18px;
+  }
+
+  @media (max-width: 870px) {
+    padding: 10px;
+    font-size: 12px;
+    line-height: 120%;
+  }
+
+  &:hover {
+    color: #ffffff;
+    background-color: $green;
+    border-color: #ffffff;
+  }
+}

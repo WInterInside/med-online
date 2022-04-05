@@ -1,0 +1,22 @@
+@mixin text($text-color, $font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $text-color;
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin bg ($background-position, $background-repeat) {
+  background-position: $background-position;
+  background-repeat: $background-repeat;
+}
+
+@mixin list-style () {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

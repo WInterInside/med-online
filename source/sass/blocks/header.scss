@@ -1,0 +1,16 @@
+.header {
+  width: 100%;
+  min-height: 76px;
+  padding-top: 20px;
+  padding-bottom: 13px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 610px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

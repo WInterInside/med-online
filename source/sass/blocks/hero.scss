@@ -1,0 +1,306 @@
+.hero {
+  // height: 100vh;
+  min-height: 800px;
+  padding-top: 100px;
+
+  background-image: url("../img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  &--delivery {
+    min-height: 630px;
+    padding-bottom: 65px;
+    padding-top: 150px;
+    background-image: url("../img/bg-auto.png");
+    background-position: 400px -200px;
+    background-repeat: no-repeat;
+
+    @media (max-width: 886px) {
+      padding-top: 230px;
+    }
+  }
+
+  &--contacts {
+    background-image: none;
+    background-color: #f4f7fc;
+    padding-top: 120px;
+
+    @media (max-width: 886px) {
+      padding-top: 230px;
+    }
+  }
+}
+
+.hero__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 762px) {
+    margin-top: 50px;
+  }
+
+  @media (max-width: 699px) {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  &--about {
+    @media (max-width: 850px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.hero__content {
+  width: 631px;
+  text-align: left;
+  margin-top: 100px;
+
+  @media (max-width: 950px) {
+    width: 70%;
+    margin-top: 60px;
+  }
+
+  @media (max-width: 699px) {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  &--about {
+    margin-top: 0;
+  }
+}
+
+.hero__text-wrapper {
+  position: relative;
+  z-index: 10;
+  border-radius: 15px;
+  padding: 20px 0 20px 20px;
+  background-color: #ffffff54;
+  border: 1px solid rgba(255, 255, 255, 0.438);
+
+  @media (max-width: 768px) {
+    padding: 10px;
+    background-color: rgba(4, 181, 248, 0.5);
+  }
+
+  @media (max-width: 699px) {
+    padding: 10px;
+    background-color: rgba(4, 181, 248, 0.5);
+  }
+}
+
+.hero__text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: calc(15px + 1em);
+}
+
+.hero__black-text {
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  @media (max-width: 430px) {
+    font-size: 35px;
+  }
+}
+
+.hero__caption {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 120%;
+
+  @media (max-width: 430px) {
+    font-size: 28px;
+  }
+
+  &--about {
+    width: 80%;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+.hero__description {
+  position: relative;
+  width: 90%;
+  padding-left: 30px;
+  padding-right: 40px;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  margin-top: calc(110px - 1em);
+  margin-bottom: calc(65px - 1em);
+
+  &::before {
+    @include pseudo;
+
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #01ceff;
+  }
+
+  @media (max-width: 950px) {
+    width: 100%;
+    margin-top: calc(60px - 1em);
+    margin-bottom: calc(65px - 1em);
+  }
+
+  &--about {
+    margin-top: 0;
+  }
+}
+
+.hero__btns {
+  width: 70%;
+  display: flex;
+
+  @media (max-width: 920px) {
+    width: 100%;
+  }
+
+  @media (max-width: 430px) {
+    flex-direction: column;
+  }
+}
+
+.hero__advantages {
+  @include list-style;
+
+  min-height: 555px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23%;
+  margin-top: 30px;
+  padding: 65px 20px 100px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  @media (max-width: 920px) {
+    width: 35%;
+    margin-top: 90px;
+    margin-left: 30px;
+    padding: 35px 20px 50px 20px;
+  }
+
+  @media (max-width: 699px) {
+    width: 100%;
+    min-height: auto;
+    margin-top: 40px;
+    margin-left: 0;
+    padding: 35px 20px 30px 20px;
+    background-color: rgba(4, 181, 248, 0.5);
+
+    font-size: 16px;
+  }
+
+  &--about {
+    width: 23%;
+    min-height: 510px;
+    padding: 20px 20px 30px 20px;
+
+    @media (max-width: 1101px) {
+      width: 40%;
+      margin-left: 30px;
+      margin-top: 55px;
+    }
+
+    @media (max-width: 850px) {
+      width: 100%;
+      min-height: auto;
+      margin-top: 40px;
+      margin-left: 0;
+      padding: 35px 20px 30px 20px;
+      background-color: rgba(4, 181, 248, 0.5);
+
+      font-size: 16px;
+    }
+  }
+}
+
+.hero__advantages[title]::before {
+  content: "Основные направления нашей деятельности:";
+  display: block;
+  font-size: 20px;
+  width: 100%;
+  text-align: left;
+
+  @media (max-width: 850px) {
+    margin-bottom: 15px;
+  }
+}
+
+.hero__advantages-item {
+  position: relative;
+  padding-left: 25px;
+  text-align: left;
+
+  &::before {
+    @include pseudo;
+
+    top: 4px;
+    left: 0;
+    width: 13px;
+    height: 13px;
+
+    border-radius: 50%;
+    background-color: #fe485e;
+    border: 3px solid #ffffff;
+  }
+
+  @media (max-width: 699px) {
+    margin-bottom: 20px;
+  }
+}
+
+.hero__img {
+  position: absolute;
+  z-index: 9;
+  top: 270px;
+  left: 370px;
+
+  @media (max-width: 1260px) {
+    left: 300px;
+  }
+
+  @media (max-width: 1122px) {
+    left: 300px;
+    top: 430px;
+    width: 751px;
+    height: 425px;
+  }
+
+  @media (max-width: 960px) {
+    display: none;
+  }
+
+  &--about {
+    top: 150px;
+    left: 530px;
+
+    @media (max-width: 1371px) {
+      left: 500px;
+    }
+
+    @media (max-width: 1325px) {
+      top: 270px;
+      left: 530px;
+      width: 500px;
+    }
+
+    @media (max-width: 1165px) {
+      display: none;
+    }
+  }
+}
