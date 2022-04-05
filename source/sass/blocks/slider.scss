@@ -90,14 +90,14 @@
   gap: 25px;
   text-align: left;
   width: 630px;
-  // min-height: 550px;
+  min-height: 550px;
   padding: 60px 0;
   margin-left: auto;
   color: #333333;
 
   @media (max-width: 800px) {
     width: 100%;
-    // min-height: 350px;
+    min-height: 350px;
     gap: 15px;
     padding: 25px;
     margin: 0 auto;

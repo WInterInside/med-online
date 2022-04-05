@@ -38,6 +38,27 @@
 .contacts__link {
   transition: all .4s;
 
+  &--phone-icon,
+  &--whatsapp-icon {
+    width: 22px;
+    height: 22px;
+
+    background-position: center left;
+    background-repeat: no-repeat;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &--phone-icon {
+    background-image: url("../img/svg/icon-phone.svg");
+  }
+
+  &--whatsapp-icon {
+    background-image: url("../img/svg/icon-whatsapp.svg");
+  }
+
   &--phone {
     font-weight: 500;
     font-size: 18px;
@@ -53,16 +74,8 @@
   }
 
   &--whatsapp {
-    flex-shrink: 0;
-    width: 22px;
-    height: 22px;
-
-    background-image: url("../img/svg/icon-whatsapp.svg");
-    background-position: center left;
-    background-repeat: no-repeat;
-
     &:hover {
-      transform: scale(1.1);
+      opacity: 0.8;
     }
   }
 }
