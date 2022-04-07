@@ -22,6 +22,14 @@ body {
   line-height: 150%;
 }
 
+.scroll-stop {
+  overflow: hidden;
+}
+
+.scroll-on {
+  overflow: auto;
+}
+
 a {
   text-decoration: none;
   color: inherit;
