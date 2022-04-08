@@ -1,4 +1,4 @@
-.slick-slider {
+.slick-slider .slider-hero {
   position: relative;
   width: 100%;
   min-height: 485px;
@@ -365,5 +365,50 @@
 
   @media (max-width: 410px) {
     font-size: 30px;
+  }
+}
+
+
+// CЛАЙДЕР ОТЗЫВОВ
+.slider-reviews {
+  position: relative;
+  width: 100%;
+}
+
+.slider-reviews .slick-list {
+  display: flex;
+  padding: 10px 0;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @media (max-width: 1200px) {
+    margin: 0 -10px;
+  }
+}
+
+.slider-reviews .slick-slide  {
+  display: flex;
+  min-height: 510px;
+  padding: 10px 20px;
+  background-image: unset;
+
+  @media (max-width: 1200px) {
+    padding: 0 10px;
+  }
+
+  @media (max-width: 850px) {
+    min-height: 450px;
+  }
+
+  @media (max-width: 620px) {
+    min-height: 340px;
+  }
+}
+
+.slider-reviews .slick-dots {
+  margin-top: 40px;
+
+  @media (max-width: 1200px) {
+    margin-top: 10px;
   }
 }

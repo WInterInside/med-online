@@ -1,0 +1,31 @@
+.remember {
+  background-color: $green;
+  padding: 43px 0;
+
+  @media (max-width: 810px) {
+    padding: 23px 0;
+  }
+}
+
+.remember__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.remember__text {
+  margin-top: 0;
+  font-size: 33px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.remember__link {
+  align-self: center;
+  width: 320px;
+  background-color: #FFFFFF;
+
+  @media (max-width: 810px) {
+    width: 100%;
+  }
+}

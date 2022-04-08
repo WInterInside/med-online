@@ -167,13 +167,14 @@
 
 .responsibility__btn {
   width: 320px;
-  background-color: $green;
+  background-color: #4ED3C5;
+  border-color: #4ED3C5;
   color: #ffffff;
 
   &:hover {
-    color: $green;
+    color: #4ED3C5;
     background-color: #ffffff;
-    border-color: $green;
+    border-color: #4ED3C5;
   }
 
   @media (max-width: 900px) {
