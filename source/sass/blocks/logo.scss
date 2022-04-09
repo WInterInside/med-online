@@ -61,3 +61,17 @@
   vertical-align: top;
   margin-right: 15px;
 }
+
+.logo--footer .logo__list {
+  @media (max-width: 610px) {
+    display: none;
+  }
+}
+
+.logo--footer {
+  @media (max-width: 610px) {
+    width: auto;
+    margin-bottom: 15px;
+    padding-left: 11px;
+  }
+}
