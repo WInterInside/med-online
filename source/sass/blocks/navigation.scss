@@ -173,6 +173,7 @@
   }
 }
 
+// стилизация кнопки услуги
 
 .navigation__services {
   display: none;
@@ -230,18 +231,17 @@
   & a {
     color: #ffffff;
     transition: all .4s;
-    border-bottom: 1px solid transparent;
 
     @media (max-width: 1100px) {
       font-size: 14px;
     }
 
     @media (max-width: 820px) {
-      color: #000;
+      color: #333333;
     }
 
     &:hover {
-      border-bottom: 1px solid #ffffff;
+      opacity: 0.7;
     }
   }
 }
