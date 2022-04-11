@@ -31,6 +31,16 @@
   }
 
   @media (max-width: 1100px) {
+    display: block;
+  }
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.logo--footer .logo__list {
+  @media (max-width: 1100px) {
     display: none;
   }
 

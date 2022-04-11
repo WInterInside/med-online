@@ -60,3 +60,12 @@ img {
     color: #055ef3;
   }
 }
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1.01);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+}

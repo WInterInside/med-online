@@ -181,3 +181,15 @@
     width: 100%;
   }
 }
+
+.responsibility__offer-text {
+  display: flex;
+  z-index: 10;
+
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  &:hover {
+    // animation-play-state: paused;
+  }
+}
+

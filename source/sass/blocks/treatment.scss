@@ -54,6 +54,14 @@
   margin-right: 33px;
   margin-bottom: 45px;
 
+  transition: all .4s;
+
+  &:hover {
+    border: unset;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.4);
+  }
+
   @media (max-width: 1300px) {
     width: 48%;
     height: 250px;
@@ -85,7 +93,12 @@
 
   &--warning {
     background-image: unset;
-    border-radius: 0;
+
+    &:hover {
+      transform: unset;
+      box-shadow: unset;
+    }
+
     border: none;
     text-align: left;
 
@@ -107,6 +120,10 @@
   margin: 0;
   padding: 15px 30px;
   padding-right: 45px;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
   font-weight: 500;
   font-size: 22px;
   line-height: 130%;

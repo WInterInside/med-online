@@ -1,0 +1,35 @@
+.connect {
+  display: none;
+
+  @media (max-width: 820px) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    padding: 10px;
+    background-color: $green;
+    border-top: 2px solid #ffffff;
+  }
+}
+
+
+.connect .contacts__link {
+  &--phone-icon {
+    background-image: url("../img/svg/icon-phone-white.svg");
+  }
+
+  &--whatsapp-icon {
+    background-image: url("../img/svg/icon-whatsapp-white.svg");
+  }
+
+  &--reg-icon {
+    background-size: contain;
+    background-image: url("../img/svg/icon-avail.svg");
+  }
+}

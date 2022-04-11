@@ -61,6 +61,12 @@
   border: 1px solid #E0E0E0;
   border-radius: 15px;
   margin-bottom: 40px;
+  transition: all .4s;
+
+  &:hover {
+    border: 1px solid $green;
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.4);
+  }
 
   @media (max-width: 1100px) {
     width: 48%;
@@ -120,6 +126,14 @@
     margin-right: 0;
     padding: 0;
 
+    transition: all .4s;
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+    &:hover {
+      box-shadow: unset;
+      animation-play-state: paused;
+    }
+
     @media (max-width: 1100px) {
       order: 5;
     }
@@ -162,6 +176,7 @@
     }
   }
 }
+
 
 .take-care__item-heading {
   display: flex;

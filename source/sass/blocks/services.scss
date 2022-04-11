@@ -106,4 +106,13 @@
   @media (max-width: 1100px) {
     font-size: 14px;
   }
+
+  &--current {
+    opacity: 0.7;
+    color: #828282;
+    cursor: unset;
+    &:hover {
+      color: #828282;
+    }
+  }
 }

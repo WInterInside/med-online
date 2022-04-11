@@ -20,9 +20,22 @@
     justify-content: center;
     margin-right: -30px;
   }
+
+  &--neurology {
+    @media (max-width: 1240px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-right: -20px;
+      margin-bottom: -20px;
+    }
+  }
 }
 
 .advantages__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   width: 25%;
   padding: 20px;
   margin-right: 40px;
@@ -31,6 +44,12 @@
 
   text-align: left;
   color: #ffffff;
+  transition: all .4s;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.4);
+  }
 
   @media (max-width: 1200px) {
     width: 45%;
@@ -42,6 +61,24 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
+  }
+
+  &--neurology {
+    margin-right: 30px;
+    padding: 15px;
+    padding-bottom: 30px;
+
+    @media (max-width: 1240px) {
+      width: 45%;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 620px) {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -58,9 +95,29 @@
     padding-bottom: 10px;
   }
 
-  &--available {background-image: url("../img/svg/icon-avail.svg");}
+  &--available,
+  &--easy {
+    background-image: url("../img/svg/icon-avail.svg");
+  }
+
+  &--easy {
+    background-position: top -5px left;
+    padding-bottom: 10px;
+  }
+
   &--profit {background-image: url("../img/svg/icon-profit.svg");}
   &--prof {background-image: url("../img/svg/icon-prof.svg");}
+
+  &--lab {
+    background-position: top 5px left;
+    background-image: url("../img/svg/laboratory.svg");
+  }
+}
+
+.advantages__list--neurology  .advantages__content {
+  @media (max-width: 1240px) {
+    padding-bottom: 40px;
+  }
 }
 
 .advantages__caption {
@@ -69,10 +126,17 @@
   font-size: 20px;
   line-height: 130%;
   font-weight: 500;
+
+  @media (max-width: 1200px) {
+    font-size: 18px;
+  }
 }
 
 .advantages__description {
   margin: 0;
   font-size: 18px;
   line-height: 130%;
+  @media (max-width: 1200px) {
+    font-size: 16px;
+  }
 }
