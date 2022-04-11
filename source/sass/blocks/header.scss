@@ -47,8 +47,5 @@
 .header__wrapper {
   display: flex;
   justify-content: space-between;
-
-  @media (max-width: 610px) {
-    flex-direction: column;
-  }
+  align-items: center;
 }

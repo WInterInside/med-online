@@ -61,6 +61,8 @@
 
     @media (max-width: 380px) {
       max-width: 100%;
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -210,6 +212,7 @@
   }
 
   @media (max-width: 380px) {
+    display: none;
     margin-top: 15px;
     margin-bottom: 15px;
     flex-direction: row;
