@@ -1,0 +1,41 @@
+.trust {
+  padding: 80px 0;
+  background-color: #ffffff;
+
+  @media (max-width: 1200px) {
+    padding: 30px 0;
+  }
+}
+
+.trust__caption {
+  text-align: left;
+  margin: 0;
+  font-size: 40px;
+  line-height: 130%;
+  color: #333333;
+  margin-bottom: 40px;
+
+  @media (max-width: 1200px) {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.trust__list {
+  @include list-style;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-right: -40px;
+  margin-bottom: -40px;
+}
+
+.trust__item {
+  width: 45%;
+  padding: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  border: 2px solid #E0E0E0;
+  box-shadow: 0px 30.1471px 24.1177px rgba(62, 61, 64, 0.0456112), 0px 12.5216px 10.0172px rgba(62, 61, 64, 0.035), 0px 4.5288px 3.62304px rgba(62, 61, 64, 0.0243888);
+  border-radius: 15px;
+}
