@@ -5,9 +5,9 @@ $(window).scroll(function() {
 $(document).ready(function(){
 	$('.slider-hero').slick({
 		arrows:false,
-		dots:false,
+		dots:true,
 		slidesToShow:1,
-		autoplay:false,
+		autoplay:true,
 		speed:1000,
 		autoplaySpeed:5000,
 	});
