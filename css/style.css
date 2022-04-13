@@ -542,8 +542,14 @@ img {
     .hero {
       min-height: 350px; } }
   .hero--neurology {
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #b5b8be), color-stop(50%, #ebecef));
-    background: linear-gradient(90deg, #b5b8be 50%, #ebecef 50%); }
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: linear-gradient(90deg, #a8b0c1 50%, #ebecf0 50%);
+    background-image: url("../img/slider-hero/neurology.jpg"); }
+    @media (max-width: 800px) {
+      .hero--neurology {
+        background-image: unset;
+        background-color: #F2F2F2; } }
 
 .logo {
   -ms-flex-negative: 0;
@@ -985,10 +991,10 @@ img {
     .navigation__menu {
       display: block;
       position: fixed;
-      top: 27px;
+      top: 22px;
       right: 20px;
-      height: 30px;
-      width: 30px;
+      height: 37px;
+      width: 37px;
       background-color: #4ABAAE;
       border-radius: 50%;
       cursor: pointer;
@@ -1059,7 +1065,8 @@ img {
       border-bottom: 1px solid #4ABAAE; } }
 
 .navigation__services .services__item:last-child {
-  border-bottom: unset; }
+  border-bottom: unset;
+  margin-bottom: 0; }
 
 .navigation__item--services:hover .navigation__services,
 .navigation__item--services:focus .navigation__services {
@@ -1071,8 +1078,8 @@ img {
   z-index: 100;
   top: 20px;
   left: 120px;
-  overflow: scroll;
-  max-height: 460px;
+  overflow-y: scroll;
+  max-height: 450px;
   background-color: #4ABAAE;
   padding: 20px;
   border-radius: 10px;
@@ -1126,6 +1133,15 @@ img {
   border-color: #ffffff;
   color: #ffffff;
   background-image: url("../img/svg/services-icon-white.svg"); }
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff64;
+  border-radius: 5px; }
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: transparent;
+  border-radius: 5px; }
 
 ::-webkit-input-placeholder {
   font-size: 18px;
@@ -1401,9 +1417,6 @@ img {
       .slider-hero__item--3 {
         background-image: url("../img/slider-hero/world-mob.jpg"); } }
 
-.hero--neurology .slick-slide {
-  background-image: url("../img/slider-hero/neurology.jpg"); }
-
 .slider-hero__icons {
   display: none; }
   @media (max-width: 1200px) {
@@ -1483,6 +1496,20 @@ img {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
+  .slider-hero__content--neurology {
+    padding: 60px 0; }
+    @media (max-width: 1100px) {
+      .slider-hero__content--neurology {
+        min-height: 350px;
+        padding: 10px 20px; } }
+    @media (max-width: 800px) {
+      .slider-hero__content--neurology {
+        min-height: 350px;
+        padding: 50px 20px; } }
+    @media (max-width: 550px) {
+      .slider-hero__content--neurology {
+        font-size: 30px;
+        padding: 10px 0; } }
 
 .slider-hero__save {
   display: -webkit-box;
@@ -1544,6 +1571,12 @@ img {
   @media (max-width: 550px) {
     .slider-hero__save-link {
       font-size: 30px; } }
+
+@media (max-width: 1100px) {
+  .slider-hero__card-wrapper {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #ffffffc7; } }
 
 .slider-hero__content-card {
   padding: 60px 54px 76px 44px;
@@ -3242,6 +3275,136 @@ img {
     .trust__caption {
       font-size: 30px;
       margin-bottom: 20px; } }
+  @media (max-width: 800px) {
+    .trust__caption {
+      text-align: center; } }
+
+.trust__banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: 100%;
+  border-radius: 15px;
+  padding: 50px 40px;
+  background-color: #4ABAAE;
+  border: 1px solid #E0E0E0;
+  margin-bottom: 40px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../img/trust-bg.svg"); }
+  @media (max-width: 1230px) {
+    .trust__banner {
+      padding: 30px 20px; } }
+  @media (max-width: 1110px) {
+    .trust__banner {
+      padding: 20px 20px;
+      margin-bottom: 20px; } }
+  @media (max-width: 880px) {
+    .trust__banner {
+      background-image: unset; } }
+  @media (max-width: 650px) {
+    .trust__banner {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 0; } }
+
+.trus__banner-column {
+  width: 30%; }
+  @media (max-width: 650px) {
+    .trus__banner-column {
+      width: 100%; } }
+  .trus__banner-column--left {
+    padding-right: 30px; }
+    @media (max-width: 1110px) {
+      .trus__banner-column--left {
+        padding-right: 10px; } }
+    @media (max-width: 880px) {
+      .trus__banner-column--left {
+        padding: 0; } }
+    @media (max-width: 650px) {
+      .trus__banner-column--left {
+        padding: 15px; } }
+  @media (max-width: 880px) {
+    .trus__banner-column--center {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      background-color: #ffffff;
+      margin-top: -20px;
+      margin-bottom: -20px;
+      padding: 10px; } }
+  @media (max-width: 880px) and (max-width: 650px) {
+    .trus__banner-column--center {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding: 35px 10px; } }
+  .trus__banner-column--right {
+    padding-left: 40px; }
+    @media (max-width: 1110px) {
+      .trus__banner-column--right {
+        padding-left: 30px; } }
+    @media (max-width: 880px) {
+      .trus__banner-column--right {
+        padding: 0; } }
+    @media (max-width: 650px) {
+      .trus__banner-column--right {
+        padding: 15px; } }
+
+.trust__text {
+  margin: 0;
+  text-align: left;
+  font-size: 18px;
+  line-height: 130%;
+  color: #FFFFFF; }
+  @media (max-width: 1110px) {
+    .trust__text {
+      font-size: 14px; } }
+  .trust__text--large {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+    text-align: center;
+    color: #828282;
+    margin-bottom: 20px; }
+    @media (max-width: 1110px) {
+      .trust__text--large {
+        font-size: 24px; } }
+    @media (max-width: 800px) {
+      .trust__text--large {
+        font-weight: 600;
+        font-size: 20px; } }
+
+.trust__link {
+  color: #ffffff;
+  background: #4ED3C5; }
+  @media (max-width: 1110px) {
+    .trust__link {
+      padding: 5px;
+      font-size: 12px;
+      line-height: 120%;
+      width: 80%;
+      margin: 0 auto; } }
+  @media (max-width: 550px) {
+    .trust__link {
+      width: 100%; } }
+  .trust__link:hover {
+    background-color: #ffffff;
+    color: #4ED3C5;
+    border: 2px solid #4ED3C5; }
 
 .trust__list {
   list-style: none;
@@ -3252,18 +3415,54 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: -40px; }
+  @media (max-width: 1230px) {
+    .trust__list {
+      margin-bottom: -20px; } }
 
 .trust__item {
-  width: 45%;
+  text-align: left;
+  width: 48%;
   padding: 40px;
-  margin-right: 40px;
-  margin-bottom: 40px;
+  padding-bottom: 25px;
   border: 2px solid #E0E0E0;
   -webkit-box-shadow: 0px 30.1471px 24.1177px rgba(62, 61, 64, 0.0456112), 0px 12.5216px 10.0172px rgba(62, 61, 64, 0.035), 0px 4.5288px 3.62304px rgba(62, 61, 64, 0.0243888);
           box-shadow: 0px 30.1471px 24.1177px rgba(62, 61, 64, 0.0456112), 0px 12.5216px 10.0172px rgba(62, 61, 64, 0.035), 0px 4.5288px 3.62304px rgba(62, 61, 64, 0.0243888);
-  border-radius: 15px; }
+  border-radius: 15px;
+  margin-bottom: 40px; }
+  @media (max-width: 1230px) {
+    .trust__item {
+      width: 49%;
+      margin-bottom: 20px;
+      padding: 20px; } }
+  @media (max-width: 650px) {
+    .trust__item {
+      width: 100%;
+      padding: 14px; } }
+
+.trust__item-caption {
+  margin: 0;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 130%;
+  color: #4ABAAE;
+  margin-bottom: 15px; }
+  @media (max-width: 650px) {
+    .trust__item-caption {
+      font-size: 24px; } }
+
+.trust__item-text {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 130%;
+  color: #333333; }
+  @media (max-width: 650px) {
+    .trust__item-text {
+      font-size: 14px; } }
 
 .home {
   position: absolute;

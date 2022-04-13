@@ -7,6 +7,16 @@
   }
 
   &--neurology {
-    background: linear-gradient(90deg, rgba(181,184,190,1) 50%, rgb(235, 236, 239) 50%);
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-color: linear-gradient(90deg, rgba(168,176,193,1) 50%, rgba(235,236,240,1) 50%);
+    background-image: url("../img/slider-hero/neurology.jpg");
+
+    @media (max-width: 800px) {
+      background-image: unset;
+      background-color: #F2F2F2;
+    }
   }
 }
