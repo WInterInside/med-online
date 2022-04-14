@@ -1,0 +1,277 @@
+.price {
+  padding: 70px 0;
+  background-color: #F3F3F3;
+
+  @media (max-width: 1200px) {
+    padding: 30px 0;
+  }
+}
+
+.price__caption {
+  text-align: left;
+  margin: 0;
+  font-size: 40px;
+  line-height: 130%;
+  color: #333333;
+  margin-bottom: 40px;
+
+  @media (max-width: 1200px) {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 800px) {
+    text-align: center;
+  }
+}
+
+.price__table {
+  width: 100%;
+  background-color: #F3F3F3;
+  border-spacing: 0;
+  border: none;
+
+  @media (max-width: 360px) {
+    margin-left: -7px;
+  }
+
+  & tr {
+    background-color: #FFFFFF;
+  }
+
+  & td {
+    &:nth-child(1) {
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 130%;
+
+      @media (max-width: 1100px) {
+        font-size: 16px;
+        text-align: center;
+      }
+
+      @media (max-width: 680px) {
+        font-size: 14px;
+        text-align: center;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 12px;
+      }
+    }
+
+    text-align: left;
+    vertical-align: text-top;
+    padding: 35px 30px;
+    border-right: 1px solid #BDBDBD;
+    border-left: 1px solid #BDBDBD;
+    border-bottom: 1px solid #BDBDBD;
+
+    @media (max-width: 1100px) {
+      padding: 10px 10px;
+    }
+
+    @media (max-width: 500px) {
+      padding: 5px;
+    }
+
+    &:nth-child(3) {
+      padding: 0;
+    }
+  }
+
+  & th {
+    &:nth-child(1) {
+      width: 20%;
+    }
+
+    width: 35%;
+    border: 1px solid #BDBDBD;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 130%;
+    color: #FFFFFF;
+    background-color: #4ABAAE;
+    padding: 75px 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    @media (max-width: 1100px) {
+      font-size: 22px;
+      padding: 10px 0px;
+    }
+
+    @media (max-width: 680px) {
+      font-size: 18px;
+      padding: 5px 0;
+    }
+
+    &:nth-child(3) {
+      width: 45%;
+      padding-top: 15px;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.price__subtable,
+.price__subtable-cost {
+  width: 100%;
+  border-spacing: 0;
+  margin-top: 10px;
+
+  & tr {
+  }
+
+  & td {
+    &:nth-child(1) {
+      font-weight: 600;
+    }
+
+    text-align: left;
+    vertical-align: text-top;
+    padding: 35px 30px;
+    border-right: 1px solid #BDBDBD;
+    border-left: 1px solid #BDBDBD;
+
+    @media (max-width: 500px) {
+      padding: 5px;
+    }
+  }
+
+  & th {
+    &:nth-child(1) {
+      width: 33%;
+    }
+
+    width: 33%;
+    border: 1px solid #BDBDBD;
+
+    line-height: 130%;
+    text-align: center;
+
+    vertical-align: text-top;
+    color: #333333;
+
+    background-color: #FBFBFB;
+    padding: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    &:nth-child(3) {
+      padding: 10px;
+    }
+
+    @media (max-width: 500px) {
+      padding: 5px;
+    }
+
+    & span {
+      display: inline-block;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 130%;
+      color: #333333;
+
+      @media (max-width: 1100px) {
+        font-size: 14px;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.price__subtable-caption {
+  font-weight: 500;
+  font-size: 22px;
+  margin: 0;
+
+  @media (max-width: 1100px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 12px;
+  }
+}
+
+.price__subtable-avalieble {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #333333;
+
+  @media (max-width: 1100px) {
+    font-size: 12px;
+  }
+}
+
+.price__subtable-cost {
+  width: 100%;
+  border-spacing: 0;
+  margin-top: 0;
+
+  & tr {
+  }
+
+  & td {
+    &:nth-child(1) {
+      font-weight: 600;
+    }
+
+    font-size: 22px;
+    text-align: left;
+    vertical-align: text-top;
+    padding: 0;
+    border-right: 1px solid #BDBDBD;
+    border-left: 1px solid #BDBDBD;
+  }
+
+  & th {
+    &:nth-child(1) {
+      width: 33%;
+    }
+
+    width: 33%;
+    padding: 40px 30px;
+    border-top: none;
+    border-bottom: none;
+    border-right: 0px solid #BDBDBD;
+    border-left: 0px solid #BDBDBD;
+    font-size: 22px;
+    line-height: 130%;
+    text-align: center;
+
+    vertical-align: text-top;
+    color: #333333;
+
+    background-color: #FFFFFF;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    @media (max-width: 1100px) {
+      font-size: 18px;
+      padding: 10px 10px;
+    }
+
+    @media (max-width: 500px) {
+      padding: 5px;
+      font-size: 12px;
+    }
+
+    &:nth-child(3) {
+      padding: 0;
+    }
+  }
+}
+
+.pirce__table-hidden {
+  @media (max-width: 680px) {
+    display: none;
+  }
+}
