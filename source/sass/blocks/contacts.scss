@@ -135,6 +135,10 @@
       opacity: 0.8;
     }
   }
+
+  &--mobile {
+    width: 100%;
+  }
 }
 
 .mobile-contacts  {
@@ -162,5 +166,12 @@
   &--whatsapp-icon {
     background-position: center;
     background-image: url("../img/svg/icon-whatsapp-white.svg");
+  }
+}
+
+.contacts--mobile {
+  @media (max-width: 650px) {
+    font-size: 11px;
+    line-height: 14px;
   }
 }

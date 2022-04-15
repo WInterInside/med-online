@@ -146,6 +146,7 @@
 .trust__link {
   color: #ffffff;
   background: #4ED3C5;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 
   @media (max-width: 1110px) {
     padding: 5px;
@@ -163,7 +164,8 @@
     background-color: #ffffff;
     color: #4ED3C5;
     border: 2px solid #4ED3C5;
-  }
+    animation-play-state: paused;
+   }
 }
 
 

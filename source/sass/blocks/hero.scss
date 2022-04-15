@@ -11,8 +11,7 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    background-color: linear-gradient(90deg, rgba(168,176,193,1) 50%, rgba(235,236,240,1) 50%);
-    background-image: url("../img/slider-hero/neurology.jpg");
+    background: url("../img/slider-hero/neurology.jpg") center no-repeat, linear-gradient(90deg, rgb(181, 184, 190) 50%, rgba(235,236,240,1) 50%);;
 
     @media (max-width: 800px) {
       background-image: unset;
