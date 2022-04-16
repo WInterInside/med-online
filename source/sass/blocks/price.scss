@@ -325,13 +325,24 @@
   display: flex;
   width: 100%;
   flex-grow: 1;
-  background-color: red;
+  // background-color: red;
 
   & div {
+    padding: 10px;
     text-align: center;
     width: 33.33%;
     height: 100%;
-    background-color: #4ABAAE;
-    border-left: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-left: 1px solid #BDBDBD;
+  }
+}
+
+.cost__bottom {
+  border-bottom: 1px solid #BDBDBD;
+  &--left {
+    border-bottom-left-radius: 15px;
+  }
+  &--right {
+    border-bottom-right-radius: 15px;
   }
 }

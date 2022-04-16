@@ -1,84 +1,84 @@
-::-webkit-input-placeholder {
-  font-size: 18px;
-  line-height: 21px;
-  color: #BDBDBD;
-
-  @media (max-width: 1100px) {
-    font-size: 14px;
-  }
-}
-:-moz-placeholder {
-  font-size: 18px;
-  line-height: 21px;
-  color: #BDBDBD;
-
-  @media (max-width: 1100px) {
-    font-size: 14px;
-  }
-}
-::-moz-placeholder {
-  font-size: 18px;
-  line-height: 21px;
-  color: #BDBDBD;
-
-  @media (max-width: 1100px) {
-    font-size: 14px;
-  }
-}
-:-ms-input-placeholder {
-  font-size: 18px;
-  line-height: 21px;
-  color: #BDBDBD;
-
-  @media (max-width: 1100px) {
-    font-size: 14px;
-  }
-}
-::-ms-input-placeholder {
-  font-size: 18px;
-  line-height: 21px;
-  color: #BDBDBD;
-
-  @media (max-width: 1100px) {
-    font-size: 14px;
-  }
-}
-::placeholder {
-  font-size: 18px;
-  line-height: 21px;
-  color: #BDBDBD;
-
-  @media (max-width: 1100px) {
-    font-size: 14px;
-  }
-}
-:focus::-webkit-input-placeholder {
-  color: transparent;
-}
-:focus::-moz-placeholder {
-  color: transparent;
-}
-:focus:-moz-placeholder {
-  color: transparent;
-}
-:focus:-ms-input-placeholder {
-  color: transparent;
-}
-:hover::-webkit-input-placeholder {
-  color: #ffffff;
-}
-:hover::-moz-placeholder {
-  color: #ffffff;
-}
-:hover:-moz-placeholder {
-  color: #ffffff;
-}
-:hover:-ms-input-placeholder {
-  color: #ffffff;
-}
-
 .search {
   display: flex;
+
+  ::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 21px;
+    color: #BDBDBD;
+
+    @media (max-width: 1100px) {
+      font-size: 14px;
+    }
+  }
+  :-moz-placeholder {
+    font-size: 18px;
+    line-height: 21px;
+    color: #BDBDBD;
+
+    @media (max-width: 1100px) {
+      font-size: 14px;
+    }
+  }
+  ::-moz-placeholder {
+    font-size: 18px;
+    line-height: 21px;
+    color: #BDBDBD;
+
+    @media (max-width: 1100px) {
+      font-size: 14px;
+    }
+  }
+  :-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 21px;
+    color: #BDBDBD;
+
+    @media (max-width: 1100px) {
+      font-size: 14px;
+    }
+  }
+  ::-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 21px;
+    color: #BDBDBD;
+
+    @media (max-width: 1100px) {
+      font-size: 14px;
+    }
+  }
+  ::placeholder {
+    font-size: 18px;
+    line-height: 21px;
+    color: #BDBDBD;
+
+    @media (max-width: 1100px) {
+      font-size: 14px;
+    }
+  }
+  :focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+  :focus::-moz-placeholder {
+    color: transparent;
+  }
+  :focus:-moz-placeholder {
+    color: transparent;
+  }
+  :focus:-ms-input-placeholder {
+    color: transparent;
+  }
+  :hover::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+  :hover::-moz-placeholder {
+    color: #ffffff;
+  }
+  :hover:-moz-placeholder {
+    color: #ffffff;
+  }
+  :hover:-ms-input-placeholder {
+    color: #ffffff;
+  }
 }
 
 .search__input,

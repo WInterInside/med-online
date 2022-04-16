@@ -35,4 +35,16 @@
     background-color: #4ED3C5;
     border-color: #ffffff;
   }
+
+  &--submit {
+    color: #ffffff;
+    width: 100%;
+    background-color: #4ED3C5;
+
+    &:hover {
+      color: #4ED3C5;
+      background-color: #ffffff;
+      border-color: #4ED3C5;
+    }
+  }
 }

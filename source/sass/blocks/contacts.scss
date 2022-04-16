@@ -90,7 +90,8 @@
 
   &--phone-icon,
   &--whatsapp-icon,
-  &--reg-icon {
+  &--reg-icon,
+  &--tm-icon {
     width: 22px;
     height: 22px;
     margin-right: 10px;
@@ -101,6 +102,10 @@
     &:hover {
       transform: scale(1.1);
     }
+  }
+
+  &--tm-icon {
+    background-image: url("../img/social/telegram.svg");
   }
 
   &--phone-icon {
@@ -130,7 +135,8 @@
     }
   }
 
-  &--whatsapp {
+  &--whatsapp,
+  &--tm {
     &:hover {
       opacity: 0.8;
     }

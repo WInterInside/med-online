@@ -7,15 +7,27 @@
   }
 
   &--neurology {
-
     background-position: center;
     background-repeat: no-repeat;
 
-    background: url("../img/slider-hero/neurology.jpg") center no-repeat, linear-gradient(90deg, rgb(181, 184, 190) 50%, rgba(235,236,240,1) 50%);;
+    background: url("../img/slider-hero/neurology.jpg") center no-repeat, linear-gradient(90deg, rgb(181, 184, 190) 50%, rgba(235,236,240,1) 50%);
 
     @media (max-width: 800px) {
       background-image: unset;
       background-color: #F2F2F2;
+    }
+  }
+
+  &--contacts {
+    min-height: 729px;
+    padding-bottom: 70px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    background: url("../img/contacts-bg.jpg") center no-repeat, linear-gradient(0deg, rgba(244,244,245,1) 40%, rgba(255,255,255,1) 56%);
+
+    @media (max-width: 1100px) {
+      // min-height: 100%;
     }
   }
 }
