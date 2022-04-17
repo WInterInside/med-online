@@ -174,3 +174,49 @@ window.addEventListener("DOMContentLoaded", function() {
 
 });
 });
+
+var acc = document.getElementsByClassName("accordion");
+
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    for (let j = 0; j < acc.length; j++) {
+    acc[j].classList.remove("active");
+      if(j!=i){
+        acc[j].nextElementSibling.style.maxHeight = null;
+      }
+    }
+    this.classList.add("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+var faqBtn = document.querySelector(".btn__faq");
+var faqList = document.querySelector(".faq__hidden");
+
+faqBtn.classList.add("faq__btn--off");
+faqList.classList.add("faq__hidden--off");
+
+faqBtn.addEventListener("click", function() {
+  if (faqList.classList.contains("faq__hidden--off")) {
+    faqList.classList.remove("faq__hidden--off");
+    faqList.classList.add("faq__hidden--on");
+    faqBtn.classList.remove("faq__btn--off");
+    faqBtn.classList.add("faq__btn--on");
+  } else {
+    faqList.classList.remove("faq__hidden--on");
+    faqList.classList.add("faq__hidden--off");
+    faqBtn.classList.remove("faq__btn--on");
+    faqBtn.classList.add("faq__btn--off");
+  }
+});
+
+const btn = document.querySelector('.btn__faq');
+btn.addEventListener('click', function() {
+  btn.innerHTML =
+    (btn.innerHTML === 'Все вопросы') ? btn.innerHTML = 'Скрыть' : btn.innerHTML = 'Все вопросы';
+})
