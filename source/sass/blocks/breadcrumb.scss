@@ -1,5 +1,11 @@
 .breadcrumb {
   margin-top: 1em;
+  &--top {
+    padding-top: 40px;
+    @media (max-width: 1100px) {
+      padding-top: 20px;
+    }
+  }
 }
 
 .breadcrumb ol {
