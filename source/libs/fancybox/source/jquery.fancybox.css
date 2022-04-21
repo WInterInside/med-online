@@ -50,6 +50,8 @@
 
 .fancybox-inner {
 	overflow: hidden;
+  border: 1px solid #BDBDBD;
+	border-radius: 15px;
 }
 
 .fancybox-type-iframe .fancybox-inner {
@@ -99,51 +101,37 @@
 
 .fancybox-close {
 	position: absolute;
-	top: -18px;
-	right: -18px;
-	width: 43px;
-	height: 43px;
-	background: linear-gradient(0deg, rgba(16,106,238,1) 46%, rgba(0,197,253,1) 89%);
-	border-radius: 50%;
+	top: 2px;
+	right: 2px;
+	width: 60px;
+	height: 60px;
+	background-color: #fff;
+	border-radius: 15px;
 	cursor: pointer;
 	z-index: 8040;
-}
-
-@media (max-width: 550px) {
-  .fancybox-close {
-    position: absolute;
-    top: -18px;
-    right: 20px;
-    width: 43px;
-    height: 43px;
-    background: linear-gradient(0deg, rgba(16,106,238,1) 46%, rgba(0,197,253,1) 89%);
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 8040;
-  }
 }
 
 .fancybox-close::after {
   position: absolute;
   content: "";
-  top: 5px;
-  left: 20px;
+  top: 20px;
+  left: 29px;
   width: 3px;
   border-radius: 3px;
-  height: 30px;
-  background-color: white;
+  height: 15px;
+  background-color: #000;
   transform: rotate(46deg);
 }
 
 .fancybox-close::before {
   position: absolute;
   content: "";
-  top: 5px;
-  left: 20px;
+  top: 20px;
+  left: 29px;
   width: 3px;
   border-radius: 3px;
-  height: 30px;
-  background-color: white;
+  height: 15px;
+  background-color: #000;
   transform: rotate(135deg);
 }
 

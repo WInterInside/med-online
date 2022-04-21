@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Все врачи онлайн</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="libs/fancybox/source/jquery.fancybox.css">
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +38,6 @@
               </div>
             </a>
           </div>
-
 
           <section class="working">
             <p class="working__caption">Режим работы:</p>
@@ -226,7 +226,6 @@
                   <div class="slider-hero__content-card">
                     <p class="slider-hero__content-card-text">Ваш сервис медицинской помощи по телефону и онлайн в любой точке мира</p>
 
-
                       <ul class="slider-hero__icons">
                         <li class="slider-hero__icons-item">
                           <div class="slider-hero__icon slider-hero__icon--phone"></div>
@@ -238,7 +237,6 @@
                           <div class="slider-hero__icon slider-hero__icon--video"></div>
                         </li>
                       </ul>
-
 
                     <div class="slider-hero__btns">
                       <a href="#"  target="_blank" rel="nofollow" class="slider-hero__btn slider-hero__btn--call btn">Позвонить в регистратуру</a>
@@ -475,7 +473,7 @@
 
           <div class="reviews__top">
             <p class="reviews__caption">Отзывы</p>
-            <a href="#" class="reviews__link">Оставить отзыв</a>
+            <a href="#review" class="reviews__link fancybox">Оставить отзыв</a>
           </div>
           <p class="reviews__subcaption">Нам очень важно ваше мнение о качестве предоставляемых услуг</p>
 
@@ -682,7 +680,7 @@
                   <li class="footer__links-item"><a href="#" class="footer__link footer__link--bold">Вопрос-ответ</a></li>
                   <li class="footer__links-item"><a href="#" class="footer__link footer__link--bold">Новости</a></li>
                   <li class="footer__links-item"><a href="#" class="footer__link footer__link--bold">Блог</a></li>
-                  <li class="footer__links-item"><a href="#" class="footer__link  footer__link--partners">Докторам и партнерам</a></li>
+                  <li class="footer__links-item"><a href="#partners" class="footer__link  footer__link--partners fancybox">Докторам и партнерам</a></li>
                 </ul>
               </div>
 
@@ -725,9 +723,53 @@
         <a href="#home" class="home"></a>
       </div>
     </footer>
-  </div>
 
+    <div class="form-review" id="review">
+      <form class="form form--modal" action="https://echo.htmlacademy.ru" method="get">
+        <p class="form__caption form__caption--modal">Оставьте отзыв</p>
+        <div class="form__wrapper form__wrapper--modal">
+          <label class="form__label form__label--modal">
+            <input class="form__input form__input--modal" type="text" name="name" id="name" placeholder="Ваше имя" required="">
+          </label>
+          <label class="form__label form__label--modal">
+            <input class="form__input form__input--modal form__input--tel" id="tel" type="tel" name="tel" placeholder="+7 (__) ___-__-__" required="">
+          </label>
+          <textarea placeholder="Введите текст" name="text"></textarea>
+          <button class="btn btn--red btn--submit btn--modal" type="submit">Отправить</button>
+          <div class="form__wrapper form__wrapper--modal form__wrapper--agreement">
+            <input class="form__checkbox form__checkbox--modal" id="agreement" type="checkbox" name="agreement" checked>
+            <label class="form__label form__label--modal form__label--checkbox form__label--modal-checkbox" for="agreement">Даю согласие <a href="#">на обработку персональных данных</a> </label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="partners" id="partners">
+      <h2>Партнерам и докторам</h2>
+      <p>
+        Все врачи Онлайн — это сервис онлайн-консультаций.
+        Сейчас мы рассматриваем новых партнеров для подключения к нашей системе и, если вы управляете клиникой,
+        которой необходимо увеличить загрузку и готовой работать с телемедицинскими консультациями, заполните, пожалуйста,
+        <a href="#clinic" class="fancybox">форму</a> - мы свяжемся с вами, чтобы обсудить индивидуальные условия.
+      </p>
+      <p>
+        Если вы - врач вне клиники, то заполните, пожалуйста, <a href="#doctor" class="fancybox">анкету</a>. В ближайшее время мы рассмотрим Вашу кандидатуру и свяжемся с Вами.
+      </p>
+    </div>
+
+    <div class="clinic" id="clinic">
+      clinik
+    </div>
+
+    <div class="doctor" id="doctor">
+      doctor
+    </div>
+
+  </div>
   <script src="libs/jquery.js"></script>
+  <script src="libs/fancybox/source/jquery.fancybox.js"></script>
+  <script>
+    $(".fancybox").fancybox();
+  </script>
   <script src="js/script.js"></script>
   <script src="libs/slick.min.js"></script>
 </body>

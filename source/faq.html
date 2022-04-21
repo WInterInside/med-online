@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Вопрос - Ответ</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="libs/fancybox/source/jquery.fancybox.css">
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -226,7 +227,6 @@
             <div class="faq__content">
               <p class="faq__caption">Часто задаваемые вопросы</p>
 
-
                 <div class="faq__wrapper">
                   <div class="faq__content">
                     <div class="faq__accordion">
@@ -292,7 +292,6 @@
                     </div>
                   </div>
                 </div>
-
 
               <buttton class="btn btn__faq">Все вопросы</buttton>
             </div>
@@ -462,6 +461,10 @@
   </div>
 
   <script src="libs/jquery.js"></script>
+  <script src="libs/fancybox/source/jquery.fancybox.js"></script>
+  <script>
+    $(".fancybox").fancybox();
+  </script>
   <script src="js/script.js"></script>
   <script src="libs/slick.min.js"></script>
 </body>
