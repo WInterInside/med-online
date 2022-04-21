@@ -57,6 +57,7 @@ $(document).ready(function(){
 		arrows:false,
 		dots:true,
 		slidesToShow:3,
+    slidesToScroll: 3,
 		autoplay:true,
 		speed:1000,
 		autoplaySpeed:5000,
@@ -64,13 +65,15 @@ $(document).ready(function(){
 			{
 				breakpoint: 850,
 				settings: {
-					slidesToShow:2
+					slidesToShow:2,
+          slidesToScroll: 3
 				}
 			},
       {
 				breakpoint: 620,
 				settings: {
-					slidesToShow:1
+					slidesToShow:1,
+          slidesToScroll: 3
 				}
 			}
 		]
@@ -146,7 +149,7 @@ servicesBtn.addEventListener("click", function() {
 });
 
 $(document).ready(function(){
-  $('a[href^="#"]').bind("click", function(e){
+  $('.home').bind("click", function(e){
       var anchor = $(this);
       $('html, body').stop().animate({
           scrollTop: $(anchor.attr('href')).offset().top - 150
@@ -238,6 +241,21 @@ $(document).ready(function($) {
   $('.tab_content').hide();
   $('.tab_content:first').show();
   $('.tabs li:first').addClass('active');
+  $('.tabs li').click(function(event) {
+    event.preventDefault();
+    $('.tabs li').removeClass('active');
+    $(this).addClass('active');
+    $('.tab_content').hide();
+    var selectTab = $(this).find('a').attr("href");
+    $(selectTab).fadeIn();
+  });
+});
+
+$(document).ready(function($) {
+  $('.tab_content').hide();
+  $('.tab_content--2').show();
+  $('.tabs li').removeClass('active');
+  $('.tabs li.audio').addClass('active');
   $('.tabs li').click(function(event) {
     event.preventDefault();
     $('.tabs li').removeClass('active');

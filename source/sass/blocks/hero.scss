@@ -11,10 +11,30 @@
     background-repeat: no-repeat;
 
     background: url("../img/slider-hero/neurology.jpg") center no-repeat, linear-gradient(90deg, rgb(181, 184, 190) 50%, rgba(235,236,240,1) 50%);
-
-    @media (max-width: 800px) {
-      background-image: unset;
+    @media (max-width: 1000px) {
+      background-position-x: -100px;
       background-color: #F2F2F2;
+    }
+
+    @media (max-width: 600px) {
+      background-position-x: -250px;
+    }
+  }
+
+  &--about {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background: url("../img/slider-hero/about.jpg") center no-repeat, linear-gradient(90deg, rgb(235, 238, 243) 50%, rgba(235,236,240,1) 50%);
+
+    @media (max-width: 1000px) {
+      background-position-x: -100px;
+      background-color: #F2F2F2;
+    }
+
+    @media (max-width: 600px) {
+      background-position-x: -250px;
     }
   }
 
@@ -45,5 +65,9 @@
       padding-top: 20px;
       padding-bottom: 30px;
     }
+  }
+
+  &--services {
+    background: url("../img/services-main.jpg") center center no-repeat, linear-gradient(90deg, rgb(185, 195, 192) 30%, rgb(250, 251, 253) 70%);
   }
 }

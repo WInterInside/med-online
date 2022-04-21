@@ -2,11 +2,26 @@
   padding: 70px 0;
 
   @media (max-width: 1200px) {
-    padding: 45px 0;
-  }
-
-  @media (max-width: 680px) {
     padding: 25px 0;
+  }
+}
+
+.advantages__heading {
+  text-align: left;
+  margin-top: 0;
+  font-size: 40px;
+  line-height: 130%;
+  color: #333333;
+  @media (max-width: 1200px) {
+    font-size: 35px;
+  }
+  @media (max-width: 650px) {
+    font-size: 26px;
+    text-align: center;
+  }
+  & span {
+    color: $green;
+    font-weight: 500;
   }
 }
 
@@ -27,6 +42,20 @@
       justify-content: center;
       margin-right: -20px;
       margin-bottom: -20px;
+    }
+  }
+
+  &--doctors {
+    flex-wrap: nowrap;
+    @media (max-width: 1200px) {
+      margin-right: -20px;
+    }
+    @media (max-width: 650px) {
+      flex-wrap: wrap;
+      margin-right: -15px;
+    }
+    @media (max-width: 400px) {
+      margin-right: 0;
     }
   }
 }
@@ -80,6 +109,36 @@
       margin-bottom: 15px;
     }
   }
+
+  &--about {
+    justify-content: flex-start;
+  }
+
+  &--doctors {
+    width: 33%;
+    justify-content: flex-start;
+    @media (max-width: 1200px) {
+      margin-right: 20px;
+    }
+
+    @media (max-width: 650px) {
+      &:nth-child(2){
+        width: 93%;
+        order: 1;
+      }
+      width: 45%;
+      margin-right: 15px;
+      text-align: center;
+    }
+
+    @media (max-width: 400px) {
+      &:nth-child(2){
+        width: 100%;
+      }
+      width: 100%;
+      margin-right: 0;
+    }
+  }
 }
 
 .advantages__content {
@@ -105,13 +164,43 @@
     padding-bottom: 10px;
   }
 
-  &--profit {background-image: url("../img/svg/icon-profit.svg");}
+  &--profit,
+  &--cost {background-image: url("../img/svg/icon-profit.svg");}
+
   &--prof {background-image: url("../img/svg/icon-prof.svg");}
 
   &--lab {
     background-position: top 5px left;
     background-image: url("../img/svg/laboratory.svg");
   }
+
+  &--eff,
+  &--new,
+  &--safe,
+  &--cost,
+  &--coop {
+    text-align: center;
+    padding: 14px 30px;
+    margin-bottom: 20px;
+    @media (max-width: 1200px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &--coop {
+    background-image: url("../img/svg/coop.svg");
+    background-position: center;
+    padding: 30px;
+  }
+
+  &--eff {background-image: url("../img/svg/eff.svg");}
+  &--new {background-image: url("../img/svg/new.svg"); padding-right: 10px;}
+  &--safe {background-image: url("../img/svg/safe.svg"); padding-right: 10px;}
+}
+
+.advantages__item--doctors .advantages__content {
+  padding: 30px;
+  background-position: center;
 }
 
 .advantages__list--neurology  .advantages__content {
@@ -138,5 +227,10 @@
   line-height: 130%;
   @media (max-width: 1200px) {
     font-size: 16px;
+  }
+}
+.advantages__item--about .advantages__description {
+  @media (max-width: 680px) {
+    text-align: center;
   }
 }

@@ -1,0 +1,65 @@
+.appeal {
+  padding: 80px 0;
+
+  @media (max-width: 1260px) {
+    padding: 40px 0;
+  }
+}
+.appeal__content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 40px;
+  border: 1px solid #E0E0E0;
+  box-shadow: 0px 30.1471px 24.1177px rgba(62, 61, 64, 0.0456112), 0px 12.5216px 10.0172px rgba(62, 61, 64, 0.035), 0px 4.5288px 3.62304px rgba(62, 61, 64, 0.0243888);
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/appeal-bg.jpg");
+
+  @media (max-width: 1260px) {
+    background-position: -150px center;
+  }
+  @media (max-width: 1050px) {
+    background-position: -400px center;
+  }
+  @media (max-width: 850px) {
+    background-image: unset;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+.appeal__caption {
+  margin: 0;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 130%;
+  color: #333333;
+  margin-bottom: 20px;
+
+  @media (max-width: 850px) {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+}
+
+.appeal__text {
+  margin: 0;
+  width: 65%;
+  font-size: 18px;
+  line-height: 130%;
+  color: #333333;
+  margin-bottom: 15px;
+
+  @media (max-width: 850px) {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  &--colored {
+    color: $green;
+    margin-bottom: 0;
+  }
+}

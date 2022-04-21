@@ -328,6 +328,11 @@
   // background-color: red;
 
   & div {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 130%;
+    color: #333333;
+
     padding: 35px 0px;
     text-align: center;
     width: 33.33%;
@@ -337,6 +342,7 @@
 
     @media (max-width: 1100px) {
       padding: 10px;
+      font-size: 14px;
     }
 
     @media (max-width: 500px) {
