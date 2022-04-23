@@ -1,0 +1,335 @@
+.questionnaire {
+  display: none;
+  background-color: #fff;
+  padding: 30px 75px;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+
+  @media (max-width: 900px) {
+    padding: 20px;
+    padding-bottom: 33px;
+    width: 500px;
+  }
+
+  @media (max-width: 550px) {
+    width: 330px;
+    padding: 20px;
+    padding-bottom: 33px;
+  }
+
+  & a {
+    color: $green;
+    text-decoration: underline;
+  }
+
+  & form {
+    padding-right: 120px;
+    padding-left: 20px;
+    background-color: #FFFFFF;
+
+    @media (max-width: 900px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+}
+
+.form-wrapper {
+  height: 550px;
+  padding-bottom: 30px;
+  overflow-y: scroll;
+
+  @media (max-width: 550px) {
+    height: 300px;
+  }
+}
+
+.questionnaire__heading {
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 130%;
+  text-align: center;
+  color: #333333;
+
+  @media (max-width: 550px) {
+    font-size: 20px;
+  }
+}
+
+.questionnaire__caption {
+  font-size: 18px;
+  line-height: 130%;
+  color: #333333;
+  margin: 0;
+
+  @media (max-width: 550px) {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  &--another {
+    color: #4F4F4F;
+    @media (max-width: 550px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--present {
+    margin-bottom: 15px;
+    @media (max-width: 550px) {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.questionnaire__subcaption {
+  font-size: 14px;
+  line-height: 130%;
+  color: #828282;
+  margin-bottom: 15px;
+  margin-top: 0;
+
+  @media (max-width: 550px) {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  &--about {
+  }
+
+  &--present {
+  }
+}
+
+.questionnaire__remark {
+  margin: 0;
+  margin-left: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #BDBDBD;
+
+  @media (max-width: 550px) {
+    font-size: 12px;
+    margin-left: 0px;
+  }
+}
+
+.questionnaire__list {
+  width: 100%;
+  @include list-style;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+
+  @media (max-width: 550px) {
+    padding-left: 0;
+  }
+}
+
+.questionnaire__label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 130%;
+  color: #333333;
+  margin-bottom: 25px;
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  &--about,
+  &--present {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &--another {
+    justify-content: flex-start;
+    @media (max-width: 550px) {
+      flex-direction: row;
+    }
+  }
+
+  &--position {
+    flex-direction: column;
+    align-items: flex-start;
+    @media (max-width: 550px) {
+      align-items: center;
+    }
+  }
+
+  &--another-position {
+    @media (max-width: 550px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  & span {
+    color: #EB5757;
+    margin-left: -11px;
+  }
+}
+
+.questionnaire__input {
+  transition: all .4s;
+  height: 35px;
+  width: 280px;
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 16px;
+  @media (max-width: 900px) {
+    width: 55%;
+  }
+  @media (max-width: 550px) {
+    width: 100%;
+    font-size: 12px;
+    height: 30px;
+  }
+  &:hover {
+    box-shadow: inset 0px 0px 10px 0px #4abaafa2;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: inset 0px 0px 10px 0px #4abaafa2;
+    }
+
+  &--another {
+    margin-left: auto;
+  }
+
+  &--another-position {
+    @media (max-width: 550px) {
+      margin-top: 15px;
+    }
+  }
+
+  &--radio {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    border-radius: 50%;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: none;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.questionnaire__textarea {
+  height: 177px;
+  margin-bottom: 0;
+  @media (max-width: 900px) {
+    height: 100px;
+  }
+  @media (max-width: 550px) {
+    height: 60px;
+  }
+}
+
+.questionnaire__wrapper--download {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 550px) {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.questionnaire__wrapper--agreement {
+  margin-bottom: 20px;
+  align-items: center;
+  & span {
+    color: #EB5757;
+  }
+  transition: all .4s;
+  &:hover {
+    box-shadow: 0px 9px 15px -9px $green;
+  }
+  @media (max-width: 550px) {
+    // height: 60px;
+  }
+}
+
+.questionnaire {
+  .form__label {
+    &--checkbox {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+
+      color: #4F4F4F;
+      @media (max-width: 550px) {
+        padding-top: 3px;
+        font-size: 10px;
+      }
+    }
+  }
+  .form__checkbox + label::after {
+    @include pseudo;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 1px solid $green;
+    border-radius: 2px;
+  }
+
+  .form__checkbox:checked + label::before {
+    @include pseudo;
+    top: 3px;
+    left: 4px;
+    border: solid $green;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+  }
+
+  .form__link--agreement {
+    color: $green;
+    font-size: 14px;
+    line-height: 130%;
+    @media (max-width: 550px) {
+      font-size: 10px;
+    }
+  }
+}
+
+    // — это фон самого скроллбара.
+  // — это фон самого скроллбара.
+  ::-webkit-scrollbar {
+    width: 3px;
+    background-color: transparent;
+  }
+  // — пустое пространство под индикатором прокрутки.
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #BDBDBD;
+  }
+  // индикатор прокрутки, перетаскиваемый элемент.
+  ::-webkit-scrollbar-thumb {
+    width: 20px;
+    background-color: $green;
+    box-shadow: -2px 0px 0px 0px #4ABAAE;
+  }

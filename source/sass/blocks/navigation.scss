@@ -2,7 +2,16 @@
   display: flex;
   width: 100%;
   min-height: 60px;
+  ::-webkit-scrollbar-thumb {
+    background-color: #4ed3c691;
+    border-radius: 2px;
+  }
 
+  ::-webkit-scrollbar {
+    width: 2px;
+    background-color: transparent;
+    border-radius: 5px;
+  }
   @media (max-width: 820px) {
     min-height: 0;
   }
@@ -294,18 +303,6 @@
   @media (max-width: 820px) {
     display: inline-block;
   }
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #4ed3c691;
-
-  border-radius: 2px;
-}
-
-::-webkit-scrollbar {
-  width: 2px;
-  background-color: transparent;
-  border-radius: 5px;
 }
 
 .navigation__services-mobile-list {

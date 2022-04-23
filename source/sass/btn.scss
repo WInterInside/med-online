@@ -73,3 +73,32 @@
 .btn--modal {
   margin-bottom: 15px;
 }
+
+.btn--modal-submit {
+  width: 157px;
+  margin: 0 auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.btn--download {
+  width: 155px;
+  padding: 8px 35px 8px 50px;
+
+  border: 1px solid #828282;
+
+  font-size: 16px;
+  line-height: 140%;
+  color: #4F4F4F;
+
+  background-image: url("../img/svg/download-16-regular.svg");
+  background-position: left 10px center;
+  background-repeat: no-repeat;
+  @media (max-width: 550px) {
+    align-self: center  ;
+    margin-bottom: 15px;
+  }
+  &:hover {
+    border: 1px solid #4F4F4F;
+  }
+}
