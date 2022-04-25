@@ -134,7 +134,7 @@
 
   &::before {
     @include pseudo;
-    top: calc(50% - 1.5px);
+    top: calc(50% - 2px);
     right: 0;
     height: 3px;
     width: 96px;

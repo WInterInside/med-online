@@ -86,7 +86,21 @@
   background-size: cover;
 
   &--work {background-image: url("../img/treatment/work.jpg");}
-  &--time {background-image: url("../img/treatment/time.jpg");}
+
+  &--time {
+    background-image: url("../img/treatment/time.jpg");
+
+    @media (max-width: 850px) {
+      order: 4;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 525px) {
+      order: unset;
+    }
+  }
+
   &--center {background-image: url("../img/treatment/center.jpg");}
   &--help {background-image: url("../img/treatment/help.jpg");}
   &--dont-know {background-image: url("../img/treatment/dont-know.jpg");}

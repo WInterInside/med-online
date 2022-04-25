@@ -232,22 +232,26 @@
       width: 100%;
       justify-content: center;
     }
+    @media (max-width: 550px) {
+      padding: 20px 10px;
+    }
   }
 
   &--bg {
     @media (max-width: 1100px) {
-      padding-left: 20px;
+      // padding-left: 20px;
       background-color: #ffffffc4;
     }
+
     @media (max-width: 800px) {
-      padding-left: 0;
+      // padding-left: 0;
     }
   }
 
   &--services {
     padding: 45px 0;
     @media (max-width: 1100px) {
-      padding: 0;
+      padding: 10px 0;
       justify-content: center;
     }
   }

@@ -79,7 +79,7 @@
 }
 
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-	background-image: url(modal-x.png);
+	/* background-image: url(modal-x.png); */
 }
 
 #fancybox-loading {

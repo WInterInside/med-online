@@ -146,13 +146,16 @@
   top: 0;
   left: 220px;
   height: 100%;
+
   @media (max-width: 1250px) {
     left: 0;
     width: 326px;
   }
+
   @media (max-width: 650px) {
     left: -30px;
   }
+
   @media (max-width: 500px) {
     left: -40px;
   }
@@ -168,18 +171,42 @@
   }
 }
 
-.benefit__gif {
+.benefit__chat-container {
   position: absolute;
-  top: 70px;
-  left: 45px;
+  top: 100px;
+  left: 38px;
   width: 70%;
-  height: 65%;
-  border-radius: 15px;
+  height: 75%;
+  overflow: hidden;
+
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  background-color: #ffffff;
 
   @media (max-width: 650px) {
+    top: 70px;
     left: 76px;
-    width: 51%;
-    height: 40%;
+    width: 48%;
+  }
+
+
+  &--tabs {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100px;
+  }
+}
+
+.benefit__cathlist {
+  position: absolute;
+  left: 0;
+  top: 50%;
+
+	animation: Chat 35s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  &:hover {
+    animation-play-state: paused;
   }
 }
 
@@ -192,4 +219,14 @@
     flex-direction: column-reverse;
     align-items: center;
   }
+}
+
+
+@keyframes Chat {
+	0% {
+		transform: translateY(0%);
+	}
+	100% {
+		transform: translateY(-70%);
+	}
 }
