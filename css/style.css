@@ -6304,8 +6304,8 @@ div.article__preview {
   position: absolute;
   left: 0;
   top: 50%;
-  -webkit-animation: Chat 35s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-          animation: Chat 35s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+  -webkit-animation: Chat 37s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: Chat 37s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
   .benefit__cathlist:hover {
     -webkit-animation-play-state: paused;
             animation-play-state: paused; }
@@ -6334,16 +6334,16 @@ div.article__preview {
     -webkit-transform: translateY(0%);
             transform: translateY(0%); }
   100% {
-    -webkit-transform: translateY(-70%);
-            transform: translateY(-70%); } }
+    -webkit-transform: translateY(-82%);
+            transform: translateY(-82%); } }
 
 @keyframes Chat {
   0% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%); }
   100% {
-    -webkit-transform: translateY(-70%);
-            transform: translateY(-70%); } }
+    -webkit-transform: translateY(-82%);
+            transform: translateY(-82%); } }
 
 .partners {
   display: none;
