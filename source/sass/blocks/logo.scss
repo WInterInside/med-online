@@ -5,6 +5,9 @@
   @media (max-width: 1100px) {
     width: 180px;
   }
+  @media (max-width: 550px) {
+    width: 130px;
+  }
 }
 
 .logo__list {
@@ -25,16 +28,14 @@
     display: block;
   }
 
-  @media (max-width: 480px) {
-    // display: none;
+  &--head {
+    @media (max-width: 550px) {
+      display: none;
+    }
   }
 }
 
 .logo--footer .logo__list {
-  @media (max-width: 1100px) {
-    // display: none;
-  }
-
   @media (max-width: 610px) {
     display: block;
   }
