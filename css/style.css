@@ -832,6 +832,8 @@ img {
     .contacts__wrapper--mobile {
       margin: 0;
       margin-top: 15px; } }
+  .contacts__wrapper--contacts-mobile {
+    margin-bottom: 0; }
 
 .contacts__caption {
   margin: 0;
