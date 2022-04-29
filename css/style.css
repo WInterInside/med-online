@@ -6352,19 +6352,19 @@ div.article__preview {
 
 .benefit__chat-container {
   position: absolute;
-  top: 100px;
-  left: 38px;
-  width: 70%;
-  height: 75%;
+  top: 108px;
+  left: 42px;
+  width: 72%;
+  height: 74%;
   overflow: hidden;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: #ffffff; }
   @media (max-width: 650px) {
     .benefit__chat-container {
-      top: 70px;
-      left: 76px;
-      width: 48%; } }
+      top: 75px;
+      left: 80px;
+      width: 50%; } }
   .benefit__chat-container--tabs {
     position: relative;
     top: 0;
