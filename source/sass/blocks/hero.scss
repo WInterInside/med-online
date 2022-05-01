@@ -6,6 +6,24 @@
     min-height: 350px;
   }
 
+  &--covid {
+    background-size: contain;
+    background: url("../img/slider-hero/covid-bg.jpg") center no-repeat, linear-gradient(90deg, rgba(98,137,155,1) 40%, rgba(245,245,244,1) 56%);
+    @media (max-width: 1000px) {
+      background-position-x: -100px;
+      background-color: #F2F2F2;
+    }
+  }
+
+  &--analiz {
+    background-size: contain;
+    background: url("../img/analiz-bg.jpg") center no-repeat, linear-gradient(90deg, #E2E7F8 40%, rgba(245,245,244,1) 56%);
+    @media (max-width: 1000px) {
+      background-position-x: -100px;
+      background-color: #F2F2F2;
+    }
+  }
+
   &--neurology {
     background-position: center;
     background-repeat: no-repeat;

@@ -7,6 +7,10 @@
     text-align: center;
   }
 
+  &--analiz {
+    padding-top: 0;
+  }
+
   .tabs {
     @include list-style;
     display: flex;

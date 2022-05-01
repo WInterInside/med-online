@@ -92,6 +92,15 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  &--analiz {
+    order: 1;
+    background-image: url("../img/take-care/take-care-analiz.jpg");
+
+    @media (max-width: 1100px) {
+      background-size: contain;
+    }
+  }
+
   &--1 {
     order: 1;
     background-image: url("../img/take-care/take-care-1.jpg");

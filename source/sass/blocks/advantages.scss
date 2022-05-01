@@ -45,7 +45,8 @@
     }
   }
 
-  &--doctors {
+  &--doctors,
+  &--covid {
     flex-wrap: nowrap;
     @media (max-width: 1200px) {
       margin-right: -20px;
@@ -114,7 +115,8 @@
     justify-content: flex-start;
   }
 
-  &--doctors {
+  &--doctors,
+  &--covid {
     width: 33%;
     justify-content: flex-start;
     @media (max-width: 1200px) {
@@ -144,14 +146,20 @@
 .advantages__content {
   padding-left: 80px;
   display: flex;
+  min-height: 60px;
   flex-direction: column;
+  justify-content: center;
 
   background-position: top left;
   background-repeat: no-repeat;
+  background-size: 60px 60px;
+
+  &--incognito {
+    background-image: url("../img/svg/incognito.svg");
+  }
 
   &--fast {
     background-image: url("../img/svg/icon-fast.svg");
-    padding-bottom: 10px;
   }
 
   &--available,
@@ -161,7 +169,6 @@
 
   &--easy {
     background-position: top -5px left;
-    padding-bottom: 10px;
   }
 
   &--profit,
@@ -178,7 +185,11 @@
   &--new,
   &--safe,
   &--cost,
-  &--coop {
+  &--coop,
+  &--incognito,
+  &--fast-covid,
+  &--prof-analiz,
+  &--easy-analiz {
     text-align: center;
     padding: 14px 30px;
     margin-bottom: 20px;

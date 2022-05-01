@@ -580,6 +580,22 @@ img {
   @media (max-width: 800px) {
     .hero {
       min-height: 350px; } }
+  .hero--covid {
+    background-size: contain;
+    background: url("../img/slider-hero/covid-bg.jpg") center no-repeat, -webkit-gradient(linear, left top, right top, color-stop(40%, #62899b), color-stop(56%, #f5f5f4));
+    background: url("../img/slider-hero/covid-bg.jpg") center no-repeat, linear-gradient(90deg, #62899b 40%, #f5f5f4 56%); }
+    @media (max-width: 1000px) {
+      .hero--covid {
+        background-position-x: -100px;
+        background-color: #F2F2F2; } }
+  .hero--analiz {
+    background-size: contain;
+    background: url("../img/analiz-bg.jpg") center no-repeat, -webkit-gradient(linear, left top, right top, color-stop(40%, #E2E7F8), color-stop(56%, #f5f5f4));
+    background: url("../img/analiz-bg.jpg") center no-repeat, linear-gradient(90deg, #E2E7F8 40%, #f5f5f4 56%); }
+    @media (max-width: 1000px) {
+      .hero--analiz {
+        background-position-x: -100px;
+        background-color: #F2F2F2; } }
   .hero--neurology {
     background-position: center;
     background-repeat: no-repeat;
@@ -985,54 +1001,59 @@ img {
     .navigation__link--current:hover {
       border-bottom: 2px solid transparent; }
 
-.navigation__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+.navigation__list-mobile {
+  display: none; }
   @media (max-width: 820px) {
-    .navigation__list {
+    .navigation__list-mobile {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+  @media (max-width: 820px) and (max-width: 820px) {
+    .navigation__list-mobile {
       display: none;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
       padding: 15px 0; } }
-  .navigation__list--opened {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    background-color: #4ABAAE;
-    height: 100vh;
-    overflow-y: scroll;
-    padding-top: 70px;
-    -webkit-animation: slide-down 0.6s;
-            animation: slide-down 0.6s; }
-    @media (max-width: 610px) {
-      .navigation__list--opened {
+  @media (max-width: 820px) {
+      .navigation__list-mobile--opened {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        background-color: #4ABAAE;
+        height: 100vh;
+        overflow-y: scroll;
+        padding-top: 70px;
+        -webkit-animation: slide-down 0.6s;
+                animation: slide-down 0.6s; } }
+    @media (max-width: 820px) and (max-width: 610px) {
+      .navigation__list-mobile--opened {
         top: 0; } }
-  .navigation__list--closed {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    @media (max-width: 820px) {
-      .navigation__list--closed {
+  @media (max-width: 820px) {
+      .navigation__list-mobile--closed {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; } }
+    @media (max-width: 820px) and (max-width: 820px) {
+      .navigation__list-mobile--closed {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1047,6 +1068,24 @@ img {
         height: 100vh;
         -webkit-animation: slide-up 0.6s;
                 animation: slide-up 0.6s; } }
+
+.navigation__list-desk {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 820px) {
+    .navigation__list-desk {
+      display: none; } }
 
 @media (max-width: 820px) {
   .navigation__item {
@@ -1626,6 +1665,8 @@ img {
       .slider-hero__item--6 {
         background-image: unset;
         background-color: #ffffff; } }
+  .slider-hero__item--covid {
+    background: unset; }
 
 .slider-hero__icons {
   display: none; }
@@ -1658,7 +1699,8 @@ img {
   .slider-hero__icon--video {
     background-image: url("../img/slider-hero/iconVideo.svg"); }
 
-.slider-hero__content {
+.slider-hero__content,
+.slider-hero__content-covid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1672,82 +1714,111 @@ img {
   padding: 60px 0;
   margin-left: auto;
   color: #333333; }
-  .slider-hero__content--doctors {
+  .slider-hero__content--doctors,
+  .slider-hero__content-covid--doctors {
     width: 750px; }
   @media (max-width: 800px) {
-    .slider-hero__content {
+    .slider-hero__content,
+    .slider-hero__content-covid {
       width: 100%;
       min-height: 350px;
       padding: 50px 20px;
       margin: 0 auto; } }
   @media (max-width: 550px) {
-    .slider-hero__content {
+    .slider-hero__content,
+    .slider-hero__content-covid {
       font-size: 30px;
       padding: 30px 0; } }
-  .slider-hero__content--card {
+  .slider-hero__content--card,
+  .slider-hero__content-covid--card {
     width: 740px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
     @media (max-width: 1200px) {
-      .slider-hero__content--card {
+      .slider-hero__content--card,
+      .slider-hero__content-covid--card {
         width: 100%; } }
-  .slider-hero__content--slised {
+  .slider-hero__content--slised,
+  .slider-hero__content-covid--slised {
     width: 80%;
     padding: 50px 150px; }
     @media (max-width: 1213px) {
-      .slider-hero__content--slised {
+      .slider-hero__content--slised,
+      .slider-hero__content-covid--slised {
         padding: 50px 100px; } }
     @media (max-width: 1000px) {
-      .slider-hero__content--slised {
+      .slider-hero__content--slised,
+      .slider-hero__content-covid--slised {
         padding: 50px; } }
     @media (max-width: 860px) {
-      .slider-hero__content--slised {
+      .slider-hero__content--slised,
+      .slider-hero__content-covid--slised {
         width: 100%;
         padding: 0;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
-  .slider-hero__content--neurology {
+  .slider-hero__content--neurology,
+  .slider-hero__content-covid--neurology {
     padding: 60px 0; }
     @media (max-width: 1100px) {
-      .slider-hero__content--neurology {
+      .slider-hero__content--neurology,
+      .slider-hero__content-covid--neurology {
         min-height: 350px;
         padding: 10px 20px; } }
     @media (max-width: 800px) {
-      .slider-hero__content--neurology {
+      .slider-hero__content--neurology,
+      .slider-hero__content-covid--neurology {
         min-height: 350px;
         padding: 50px 20px; } }
     @media (max-width: 550px) {
-      .slider-hero__content--neurology {
+      .slider-hero__content--neurology,
+      .slider-hero__content-covid--neurology {
         font-size: 30px;
         padding: 10px 0; } }
-  .slider-hero__content--about {
+  .slider-hero__content--about,
+  .slider-hero__content-covid--about {
     width: 65%; }
     @media (max-width: 1200px) {
-      .slider-hero__content--about {
+      .slider-hero__content--about,
+      .slider-hero__content-covid--about {
         padding: 30px 20px; } }
     @media (max-width: 1000px) {
-      .slider-hero__content--about {
+      .slider-hero__content--about,
+      .slider-hero__content-covid--about {
         padding: 40px 10px;
         width: 100%;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
     @media (max-width: 550px) {
-      .slider-hero__content--about {
+      .slider-hero__content--about,
+      .slider-hero__content-covid--about {
         padding: 20px 10px; } }
   @media (max-width: 1100px) {
-    .slider-hero__content--bg {
-      background-color: #ffffffc4; } }
-  .slider-hero__content--services {
+    .slider-hero__content--bg,
+    .slider-hero__content-covid--bg {
+      background-color: #fffffff0; } }
+  .slider-hero__content--services,
+  .slider-hero__content-covid--services {
     padding: 45px 0; }
     @media (max-width: 1100px) {
-      .slider-hero__content--services {
+      .slider-hero__content--services,
+      .slider-hero__content-covid--services {
         padding: 10px 0;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
+
+@media (max-width: 1100px) {
+  .slider-hero__content-covid--bg {
+    padding: 20px;
+    background-color: #fffffff0; } }
+
+@media (max-width: 600px) {
+  .slider-hero__content-covid--bg {
+    padding: 20px 10px; } }
 
 .slider-hero__save {
   display: -webkit-box;
@@ -2207,19 +2278,19 @@ img {
               justify-content: center;
       margin-right: -20px;
       margin-bottom: -20px; } }
-  .advantages__list--doctors {
+  .advantages__list--doctors, .advantages__list--covid {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
     @media (max-width: 1200px) {
-      .advantages__list--doctors {
+      .advantages__list--doctors, .advantages__list--covid {
         margin-right: -20px; } }
     @media (max-width: 650px) {
-      .advantages__list--doctors {
+      .advantages__list--doctors, .advantages__list--covid {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         margin-right: -15px; } }
     @media (max-width: 400px) {
-      .advantages__list--doctors {
+      .advantages__list--doctors, .advantages__list--covid {
         margin-right: 0; } }
 
 .advantages__item {
@@ -2275,29 +2346,29 @@ img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
-  .advantages__item--doctors {
+  .advantages__item--doctors, .advantages__item--covid {
     width: 33%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
     @media (max-width: 1200px) {
-      .advantages__item--doctors {
+      .advantages__item--doctors, .advantages__item--covid {
         margin-right: 20px; } }
     @media (max-width: 650px) {
-      .advantages__item--doctors {
+      .advantages__item--doctors, .advantages__item--covid {
         width: 45%;
         margin-right: 15px;
         text-align: center; }
-        .advantages__item--doctors:nth-child(2) {
+        .advantages__item--doctors:nth-child(2), .advantages__item--covid:nth-child(2) {
           width: 93%;
           -webkit-box-ordinal-group: 2;
               -ms-flex-order: 1;
                   order: 1; } }
     @media (max-width: 400px) {
-      .advantages__item--doctors {
+      .advantages__item--doctors, .advantages__item--covid {
         width: 100%;
         margin-right: 0; }
-        .advantages__item--doctors:nth-child(2) {
+        .advantages__item--doctors:nth-child(2), .advantages__item--covid:nth-child(2) {
           width: 100%; } }
 
 .advantages__content {
@@ -2305,20 +2376,25 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 60px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-position: top left;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: 60px 60px; }
+  .advantages__content--incognito {
+    background-image: url("../img/svg/incognito.svg"); }
   .advantages__content--fast {
-    background-image: url("../img/svg/icon-fast.svg");
-    padding-bottom: 10px; }
+    background-image: url("../img/svg/icon-fast.svg"); }
   .advantages__content--available, .advantages__content--easy {
     background-image: url("../img/svg/icon-avail.svg"); }
   .advantages__content--easy {
-    background-position: top -5px left;
-    padding-bottom: 10px; }
+    background-position: top -5px left; }
   .advantages__content--profit, .advantages__content--cost {
     background-image: url("../img/svg/icon-profit.svg"); }
   .advantages__content--prof {
@@ -2326,12 +2402,12 @@ img {
   .advantages__content--lab {
     background-position: top 5px left;
     background-image: url("../img/svg/laboratory.svg"); }
-  .advantages__content--eff, .advantages__content--new, .advantages__content--safe, .advantages__content--cost, .advantages__content--coop {
+  .advantages__content--eff, .advantages__content--new, .advantages__content--safe, .advantages__content--cost, .advantages__content--coop, .advantages__content--incognito, .advantages__content--fast-covid, .advantages__content--prof-analiz, .advantages__content--easy-analiz {
     text-align: center;
     padding: 14px 30px;
     margin-bottom: 20px; }
     @media (max-width: 1200px) {
-      .advantages__content--eff, .advantages__content--new, .advantages__content--safe, .advantages__content--cost, .advantages__content--coop {
+      .advantages__content--eff, .advantages__content--new, .advantages__content--safe, .advantages__content--cost, .advantages__content--coop, .advantages__content--incognito, .advantages__content--fast-covid, .advantages__content--prof-analiz, .advantages__content--easy-analiz {
         margin-bottom: 10px; } }
   .advantages__content--coop {
     background-image: url("../img/svg/coop.svg");
@@ -2382,6 +2458,8 @@ img {
   @media (max-width: 1260px) {
     .disturb {
       padding: 30px 0; } }
+  .disturb--covid {
+    background-color: #ffffff; }
 
 .disturb__wrapper {
   display: -webkit-box;
@@ -2415,6 +2493,81 @@ img {
   @media (max-width: 600px) {
     .disturb__content {
       width: 100%; } }
+
+.disturb__article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  margin-right: 70px;
+  text-align: left;
+  z-index: 10; }
+  @media (max-width: 1260px) {
+    .disturb__article {
+      width: 40%; } }
+  @media (max-width: 1100px) {
+    .disturb__article {
+      width: 80%;
+      margin: 0 auto; } }
+  @media (max-width: 600px) {
+    .disturb__article {
+      width: 100%; } }
+  .disturb__article h2 {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 35px;
+    line-height: 130%;
+    color: #333333; }
+    @media (max-width: 600px) {
+      .disturb__article h2 {
+        text-align: center;
+        font-size: 35px; } }
+    @media (max-width: 480px) {
+      .disturb__article h2 {
+        margin-bottom: 15px; } }
+  .disturb__article p {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 130%;
+    color: #333333; }
+  .disturb__article span {
+    font-weight: 500;
+    color: #4ABAAE; }
+  .disturb__article--covid h2 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 130%;
+    margin-bottom: 30px; }
+    @media (max-width: 1150px) {
+      .disturb__article--covid h2 {
+        margin-bottom: 20px;
+        font-size: 28px; } }
+    @media (max-width: 600px) {
+      .disturb__article--covid h2 {
+        font-size: 26px; } }
+  .disturb__article--covid p {
+    text-align: left;
+    font-size: 20px;
+    line-height: 130%;
+    margin-bottom: 25px; }
+    @media (max-width: 1150px) {
+      .disturb__article--covid p {
+        margin-bottom: 15px;
+        font-size: 16px; } }
+    @media (max-width: 600px) {
+      .disturb__article--covid p {
+        font-size: 14px; } }
+  .disturb__article--covid ul {
+    padding-left: 20px;
+    text-align: left; }
+  .disturb__article--covid li {
+    color: #4ABAAE;
+    font-size: 25px; }
 
 .disturb__caption {
   margin: 0;
@@ -2524,19 +2677,28 @@ img {
     .disturb__preview {
       display: none; } }
 
-.disturb--doctors {
+.disturb--doctors,
+.disturb--covid {
   position: relative; }
-  .disturb--doctors .disturb__content {
+  .disturb--doctors .disturb__content,
+  .disturb--doctors .disturb__article,
+  .disturb--covid .disturb__content,
+  .disturb--covid .disturb__article {
     width: 60%;
-    margin-right: 0;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
     @media (max-width: 1250px) {
-      .disturb--doctors .disturb__content {
+      .disturb--doctors .disturb__content,
+      .disturb--doctors .disturb__article,
+      .disturb--covid .disturb__content,
+      .disturb--covid .disturb__article {
         margin-right: 20px; } }
     @media (max-width: 1150px) {
-      .disturb--doctors .disturb__content {
+      .disturb--doctors .disturb__content,
+      .disturb--doctors .disturb__article,
+      .disturb--covid .disturb__content,
+      .disturb--covid .disturb__article {
         width: 80%;
         margin-right: 0;
         z-index: 10;
@@ -2546,43 +2708,57 @@ img {
         margin: 0 auto;
         text-align: center; } }
     @media (max-width: 650px) {
-      .disturb--doctors .disturb__content {
+      .disturb--doctors .disturb__content,
+      .disturb--doctors .disturb__article,
+      .disturb--covid .disturb__content,
+      .disturb--covid .disturb__article {
         width: 95%;
         padding: 10px; } }
-  .disturb--doctors .disturb__caption {
+  .disturb--doctors .disturb__caption,
+  .disturb--covid .disturb__caption {
     margin-bottom: 30px; }
     @media (max-width: 1150px) {
-      .disturb--doctors .disturb__caption {
+      .disturb--doctors .disturb__caption,
+      .disturb--covid .disturb__caption {
         text-align: center;
         font-size: 30px; } }
-  .disturb--doctors .disturb__text {
+  .disturb--doctors .disturb__text,
+  .disturb--covid .disturb__text {
     margin: 0;
     margin-bottom: 15px;
     font-size: 18px;
     line-height: 130%;
     color: #333333; }
-    .disturb--doctors .disturb__text span {
+    .disturb--doctors .disturb__text span,
+    .disturb--covid .disturb__text span {
       font-weight: 500;
       color: #4ABAAE; }
-    .disturb--doctors .disturb__text:nth-child(3) {
+    .disturb--doctors .disturb__text:nth-child(3),
+    .disturb--covid .disturb__text:nth-child(3) {
       margin-bottom: 40px; }
       @media (max-width: 1250px) {
-        .disturb--doctors .disturb__text:nth-child(3) {
+        .disturb--doctors .disturb__text:nth-child(3),
+        .disturb--covid .disturb__text:nth-child(3) {
           margin-bottom: 20px; } }
-  .disturb--doctors .disturb__link {
+  .disturb--doctors .disturb__link,
+  .disturb--covid .disturb__link {
     width: 60%;
+    margin-top: 40px;
     color: #ffffff;
     background-color: #4ED3C5; }
     @media (max-width: 1250px) {
-      .disturb--doctors .disturb__link {
+      .disturb--doctors .disturb__link,
+      .disturb--covid .disturb__link {
         width: 100%; } }
-    .disturb--doctors .disturb__link:hover {
+    .disturb--doctors .disturb__link:hover,
+    .disturb--covid .disturb__link:hover {
       color: #4ED3C5;
       background-color: #ffffff;
       text-decoration: none;
       border: 2px solid #4ED3C5; }
   @media (max-width: 1150px) {
-    .disturb--doctors .disturb__preview {
+    .disturb--doctors .disturb__preview,
+    .disturb--covid .disturb__preview {
       display: block;
       position: absolute;
       width: 120%;
@@ -3234,6 +3410,14 @@ img {
       width: 100%;
       min-height: 80px;
       padding: 10px; } }
+  .take-care__item--analiz {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    background-image: url("../img/take-care/take-care-analiz.jpg"); }
+    @media (max-width: 1100px) {
+      .take-care__item--analiz {
+        background-size: contain; } }
   .take-care__item--1 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -3608,9 +3792,6 @@ img {
       color: #828282; }
   .reviews--doctors .review {
     position: relative;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
     padding-bottom: 40px;
     padding-top: 304px; }
     @media (max-width: 700px) {
@@ -5747,9 +5928,13 @@ div.article__preview {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: -30px; }
+  @media (max-width: 590px) {
+    .services-page__list {
+      margin-right: 0; } }
   .services-page__list img {
     height: 100%; }
 
@@ -5773,12 +5958,13 @@ div.article__preview {
   overflow: hidden;
   -webkit-transition: all .4s;
   transition: all .4s;
-  margin-bottom: 30px; }
-  @media (max-width: 850px) {
+  margin-bottom: 30px;
+  margin-right: 30px; }
+  @media (max-width: 1300px) {
     .services-page__item {
-      width: 48%;
+      width: 45%;
       margin-bottom: 20px; } }
-  @media (max-width: 490px) {
+  @media (max-width: 590px) {
     .services-page__item {
       width: 95%;
       margin: 0 auto;
@@ -5997,6 +6183,8 @@ div.article__preview {
     .services-tabs {
       padding: 35px 0;
       text-align: center; } }
+  .services-tabs--analiz {
+    padding-top: 0; }
   .services-tabs .tabs {
     list-style: none;
     padding: 0;

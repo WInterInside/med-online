@@ -119,6 +119,9 @@
       background-color: #ffffff;
     }
   }
+  &--covid {
+    background: unset;
+  }
 }
 
 .slider-hero__icons {
@@ -150,7 +153,8 @@
     background-image: url("../img/slider-hero/iconVideo.svg");}
 }
 
-.slider-hero__content {
+.slider-hero__content,
+.slider-hero__content-covid {
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -239,8 +243,8 @@
 
   &--bg {
     @media (max-width: 1100px) {
-      // padding-left: 20px;
-      background-color: #ffffffc4;
+      // padding: 5px 10px;
+      background-color: #fffffff0;
     }
 
     @media (max-width: 800px) {
@@ -256,6 +260,19 @@
     }
   }
 }
+
+.slider-hero__content-covid {
+  &--bg {
+    @media (max-width: 1100px) {
+      padding: 20px;
+      background-color: #fffffff0;
+    }
+    @media (max-width: 600px) {
+      padding: 20px 10px;
+    }
+  }
+}
+
 
 .slider-hero__save {
   display: flex;

@@ -99,24 +99,24 @@ $(document).ready(function(){
 // меню
 
 var menu = document.querySelector(".navigation__menu");
-var nav = document.querySelector(".navigation__list");
+var nav = document.querySelector(".navigation__list-mobile");
 var body = document.querySelector("body");
 
-nav.classList.add("navigation__list--closed");
+nav.classList.add("navigation__list-mobile--closed");
 menu.classList.add("navigation__menu--off");
 body.classList.add("scroll-on")
 
 menu.addEventListener("click", function() {
-  if (nav.classList.contains("navigation__list--closed")) {
-    nav.classList.remove("navigation__list--closed");
-    nav.classList.add("navigation__list--opened");
+  if (nav.classList.contains("navigation__list-mobile--closed")) {
+    nav.classList.remove("navigation__list-mobile--closed");
+    nav.classList.add("navigation__list-mobile--opened");
     menu.classList.remove("navigation__menu--off");
     menu.classList.add("navigation__menu--on");
     body.classList.remove("scroll-on");
     body.classList.add("scroll-stop")
   } else {
-    nav.classList.remove("navigation__list--opened");
-    nav.classList.add("navigation__list--closed");
+    nav.classList.remove("navigation__list-mobile--opened");
+    nav.classList.add("navigation__list-mobile--closed");
     menu.classList.remove("navigation__menu--on");
     menu.classList.add("navigation__menu--off");
     body.classList.remove("scroll-stop");
