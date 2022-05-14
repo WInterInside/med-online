@@ -24,7 +24,7 @@
 
   &--mobile {
     display: block;
-    align-self: flex-end;
+    margin-top: 5px;
     @media (max-width: 820px) {
       display: block;
     }
