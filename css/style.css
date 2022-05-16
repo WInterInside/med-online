@@ -4523,7 +4523,8 @@ img {
       margin-bottom: 20px; } }
   @media (max-width: 800px) {
     .price__caption {
-      text-align: center; } }
+      text-align: center;
+      font-size: 24px; } }
 
 .price__table {
   width: 100%;
@@ -4676,7 +4677,8 @@ img {
   color: #333333; }
   @media (max-width: 1100px) {
     .price__subtable-avalieble {
-      display: none; } }
+      font-size: 11px;
+      margin-top: 5px; } }
 
 .price__subtable-cost {
   width: 100%;
