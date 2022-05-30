@@ -91,9 +91,13 @@
 
   &--2 {
    background-image: url("../img/slider-hero/slider-hero-bg-1.jpg");
-   @media (max-width: 800px) {
-      background-image: unset;
-      background-color: #F2F2F2;
+
+    @media (max-width: 1100px) {
+      background-position: left -400px  center;
+    }
+
+    @media (max-width: 800px) {
+      background-position: left -300px  center;
     }
   }
 
@@ -257,6 +261,19 @@
     @media (max-width: 1100px) {
       padding: 10px 0;
       justify-content: center;
+    }
+  }
+
+  &--pain {
+    @media (max-width: 1100px) {
+      width: 550px;
+      margin: 0;
+      margin-left: auto;
+    }
+    @media (max-width: 870px) {
+      width: 470px;
+      margin: 0;
+      margin-left: auto;
     }
   }
 }
@@ -744,5 +761,157 @@
 
   @media (max-width: 1200px) {
     margin-top: 10px;
+  }
+}
+
+// переверстка второго слайда с индекса
+
+.slider-hero__content--pain .slider-hero__caption {
+  @media (max-width: 1100px) {
+    font-size: 43px;
+    margin-bottom: 15px;
+  }
+  @media (max-width: 800px) {
+    font-size: 34px;
+    text-align: left;
+    font-weight: 400;
+  }
+}
+
+.slider-hero__content--pain .slider-hero__subcaption {
+  @media (max-width: 1100px) {
+    font-size: 24px;
+  }
+  @media (max-width: 800px) {
+    text-align: left;
+  }
+}
+
+.slider-hero__content--pain .slider-hero__text {
+  @media (max-width: 1100px) {
+    font-size: 18px;
+  }
+  @media (max-width: 800px) {
+    text-align: left;
+  }
+}
+
+.slider-hero__content--pain .slider-hero__offer{
+  @media (max-width: 1100px) {
+    font-size: 16px;
+    padding-right: 0;
+  }
+}
+
+.slider-hero--index {
+  @media (max-width: 670px) {
+    display: none;
+  }
+}
+
+.slider-hero__item--index {
+  display: none;
+  @media (max-width: 670px) {
+    display: flex;
+    min-height: 600px;
+    background-color: #F1F1F1;
+    background-position: top;
+    background-image: url("../img/hero-pain-х2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: 400px) {
+    display: flex;
+    background-color: #F1F1F1;
+    background-position: top;
+    background-image: url("../img/hero-pain.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.slider-hero__content--index {
+  width: 100%;
+  padding-bottom: 0;
+}
+
+.slider-hero__item--index .slider-hero__caption {
+  @media (max-width: 800px) {
+    text-align: left;
+    font-size: 34px;
+  }
+}
+
+.slider-hero__item--index .slider-hero__text {
+  @media (max-width: 800px) {
+    text-align: center;
+    font-size: 15px;
+    align-self: center;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+.slider-hero__item--index .slider-hero__btn {
+  @media (max-width: 800px) {
+    width: 229px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+.slider-hero__item--index .slider-hero__offer {
+  @media (max-width: 800px) {
+    text-align: center;
+    font-size: 12px;
+    align-self: center;
+    max-width: 290px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+.slider-hero__item--index .btn--index {
+  display: inline-block;
+  width: 229px;
+  padding: 10px 20px;
+  margin-bottom: 120px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: $green;
+  border: unset;
+
+  @media (max-width: 400px) {
+    margin-bottom: 160px;
+  }
+
+  & span {
+    font-weight: 600;
+    color: #ffffff;
+  }
+}
+
+.slider-hero__item--index .slider-hero__btns {
+  margin-right: 0;
+  flex-wrap: wrap;
+}
+
+.slider-hero__wrapper-pain {
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px 15px;
+  padding-bottom: 0;
+  border-radius: 10px;
+  background-color: #ffffffc7;
+  margin-bottom: 30px;
+
+  @media (max-width: 390px) {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
   }
 }
