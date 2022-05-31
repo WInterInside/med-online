@@ -813,7 +813,7 @@
   display: none;
   @media (max-width: 670px) {
     display: flex;
-    min-height: 600px;
+    min-height: 650px;
     background-color: #F1F1F1;
     background-position: top;
     background-image: url("../img/hero-pain-х2.jpg");
@@ -823,6 +823,8 @@
 
   @media (max-width: 400px) {
     display: flex;
+
+    min-height: 600px;
     background-color: #F1F1F1;
     background-position: top;
     background-image: url("../img/hero-pain.jpg");
@@ -867,7 +869,8 @@
     text-align: center;
     font-size: 12px;
     align-self: center;
-    max-width: 290px;
+    max-width: 300px;
+    padding-left: 30px;
     margin: 0 auto;
     margin-bottom: 20px;
   }
@@ -877,7 +880,7 @@
   display: inline-block;
   width: 229px;
   padding: 10px 20px;
-  margin-bottom: 120px;
+  margin-bottom: 250px;
   font-size: 18px;
   font-weight: 400;
   color: #ffffff;
@@ -897,6 +900,10 @@
 .slider-hero__item--index .slider-hero__btns {
   margin-right: 0;
   flex-wrap: wrap;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 }
 
 .slider-hero__wrapper-pain {
@@ -908,9 +915,9 @@
   background-color: #ffffffc7;
   margin-bottom: 30px;
 
-  @media (max-width: 390px) {
+  @media (max-width: 500px) {
     width: 100%;
-    padding: 0;
+    padding: 20px 0;
     margin: 0;
     background-color: transparent;
   }
